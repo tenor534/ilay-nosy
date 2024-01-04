@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+#registerForm .registerContent label {
+	clear:left;
+	float:left;
+	width:120px;
+}
+
+#registerForm .registerContent {
+	padding:15px 0 10px 15px;
+	width:640px;
+}

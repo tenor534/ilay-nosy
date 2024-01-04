@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* class pour les input */
+.user_input1,
+.user_input2,
+.user_input3,
+.user_input4,
+.user_input5,
+.user_input_select1 {
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	color:#184059;
+	height:18px;
+	border:1px solid #abadb3!important;
+	background-color:#f1f1f1;
+	margin:0 0 5px 0;
+}
+
+.user_textarea_600,
+.user_textarea_600D {
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	color:#184059;
+	border:1px solid #abadb3;
+	background-color:#f1f1f1;
+	margin:0 0 5px 0;
+	width:600px;
+
+}
+.user_textarea_600D {
+	height:100px;
+
+}
+.user_file {
+	background-color:#F1F1F1;
+	color:#184059;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	/*margin:0 0 5px;*/
+}
+
+
+.user_input_select {
+	height:20px;
+}
+
+/*
+#user_nom, 
+#user_prenom,
+#user_question,
+#user_reponse
+*/
+.user_input1 {
+	width:250px;
+}
+
+/*
+#user_email, 
+#user_password,
+#user_password2,
+#user_emailAlter 
+*/
+.user_input2 {
+	width:217px;
+}
+
+/*
+#user_sexe,
+#user_datenaissance,
+#user_code
+*/ 
+.user_input3 {
+	width:100px;
+}
+
+/*#user_pays*/
+.user_input4 {
+	width:175px;
+}
+
+/*#user_cp*/
+.user_input5 {
+	width:50px;
+}
+
+/*select*/
+.input_middle {
+	vertical-align:middle;
+}
+/*select*/
+.input_top {
+	vertical-align:top;
+}
+
+.user_input_select1 {
+	height:100px;
+	width:404px;
+}
+
+/*--------------Boutons valider , Annuler ------------------------*/
+.formButton_add,
+.formButton_ok,
+.formButton_addAnnonce,
+.formButton_contactAnnonce,
+.formButton_modifier,
+.formButton_detail,
+.formButton_abrege,
+.formButton_photo,
+.formButton_detail_hover,
+.formButton_abrege_hover,
+.formButton_photo_hover,
+.formButton_valid,
+.formButton_validSearch,
+.formButton_annuler,
+.formButton_login,
+.formButton_register,
+.formButton_accept {
+	margin:5px 0 0 0;
+}
+
+.formButton_addAnnonce,
+.formButton_contactAnnonce,
+.formButton_abrege,
+.formButton_photo,
+.formButton_abrege_hover,
+.formButton_photo_hover,
+.formButton_annuler {
+	margin-left:5px;
+}
+
+.formButton_ok,
+.formButton_valid,
+.formButton_validSearch,
+.formButton_annuler {
+	display:block;
+	float:left;
+	height:21px;
+	text-indent:-9000px;
+	width:64px;
+}
+
+.formButton_ok {
+	text-indent:-9000px;
+}
+
+
+.formButton_add,
+.formButton_modifier,
+.formButton_detail,
+.formButton_abrege,
+.formButton_photo,
+.formButton_detail_hover,
+.formButton_abrege_hover,
+.formButton_photo_hover,
+.formButton_login,
+.formButton_register,
+.formButton_accept {
+	display:block;
+	float:left;
+	height:21px;
+	text-indent:-9000px;
+	width:74px;
+}
+.formButton_addAnnonce,
+.formButton_contactAnnonce {
+	display:block;
+	float:left;
+	height:21px;
+	text-indent:-9000px;
+	width:114px;
+}
+
+.formButton_login {
+	background:transparent url(../images/v5/btn_login.gif) no-repeat scroll 0 0;
+}
+.formButton_login:hover {
+	background:transparent url(../images/v5/btn_login.gif) no-repeat scroll 0 -21px;
+}
+.formButton_login:active {
+	background:transparent url(../images/v5/btn_login.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_register {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 0;
+}
+.formButton_register:hover {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 -21px;
+}
+.formButton_register:active {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_accept {
+	background:transparent url(../images/v5/btn_accept.gif) no-repeat scroll 0 0;
+}
+.formButton_accept:hover {
+	background:transparent url(../images/v5/btn_accept.gif) no-repeat scroll 0 -21px;
+}
+.formButton_accept:active {
+	background:transparent url(../images/v5/btn_accept.gif) no-repeat scroll 0 -42px;
+}
+
+
+.formButton_ok {
+	background:transparent url(../images/v5/btn_ok.gif) no-repeat scroll 0 0;
+}
+.formButton_ok:hover {
+	background:transparent url(../images/v5/btn_ok.gif) no-repeat scroll 0 -21px;
+}
+.formButton_ok:active {
+	background:transparent url(../images/v5/btn_ok.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_valid {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 0;
+}
+.formButton_valid:hover {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 -21px;
+}
+.formButton_valid:active {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 -42px;
+}
+.formButton_annuler {
+	background:transparent url(../images/v5/btn_annuler.gif) no-repeat scroll 0 0;
+}
+.formButton_annuler:hover {
+	background:transparent url(../images/v5/btn_annuler.gif) no-repeat scroll 0 -21px;
+}
+.formButton_annuler:active {
+	background:transparent url(../images/v5/btn_annuler.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_validSearch {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 0;
+}
+.formButton_validSearch:hover {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 -21px;
+}
+.formButton_validSearch:active {
+	background:transparent url(../images/v5/btn_valid.gif) no-repeat scroll 0 -42px;
+}
+
+
+.formButton_modifier {
+	background:transparent url(../images/v5/btn_modifier.gif) no-repeat scroll 0 0;
+}
+.formButton_modifier:hover {
+	background:transparent url(../images/v5/btn_modifier.gif) no-repeat scroll 0 -21px;
+}
+.formButton_modifier:active {
+	background:transparent url(../images/v5/btn_modifier.gif) no-repeat scroll 0 -42px;
+}
+.formButton_add {
+	background:transparent url(../images/v5/btn_add.gif) no-repeat scroll 0 0;
+}
+.formButton_add:hover {
+	background:transparent url(../images/v5/btn_add.gif) no-repeat scroll 0 -21px;
+}
+.formButton_add:active {
+	background:transparent url(../images/v5/btn_add.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_addAnnonce {
+	background:transparent url(../images/v5/btn_addAnnonce.gif) no-repeat scroll 0 0;
+}
+.formButton_addAnnonce:hover {
+	background:transparent url(../images/v5/btn_addAnnonce.gif) no-repeat scroll 0 -21px;
+}
+.formButton_addAnnonce:active {
+	background:transparent url(../images/v5/btn_addAnnonce.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_contactAnnonce {
+	background:transparent url(../images/v5/btn_contactAnnonce.gif) no-repeat scroll 0 0;
+}
+.formButton_contactAnnonce:hover {
+	background:transparent url(../images/v5/btn_contactAnnonce.gif) no-repeat scroll 0 -21px;
+}
+.formButton_contactAnnonce:active {
+	background:transparent url(../images/v5/btn_contactAnnonce.gif) no-repeat scroll 0 -42px;
+}
+
+/**/
+.formButton_detail {
+	background:transparent url(../images/v5/btn_detail.gif) no-repeat scroll 0 0;
+}
+.formButton_detail:hover,
+.formButton_detail_hover {
+	background:transparent url(../images/v5/btn_detail.gif) no-repeat scroll 0 -21px;
+}
+.formButton_detail:active {
+	background:transparent url(../images/v5/btn_detail.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_abrege {
+	background:transparent url(../images/v5/btn_abrege.gif) no-repeat scroll 0 0;
+}
+.formButton_abrege:hover,
+.formButton_abrege_hover {
+	background:transparent url(../images/v5/btn_abrege.gif) no-repeat scroll 0 -21px;
+}
+.formButton_abrege:active {
+	background:transparent url(../images/v5/btn_abrege.gif) no-repeat scroll 0 -42px;
+}
+
+.formButton_photo {
+	background:transparent url(../images/v5/btn_photo.gif) no-repeat scroll 0 0;
+}
+.formButton_photo:hover,
+.formButton_photo_hover {
+	background:transparent url(../images/v5/btn_photo.gif) no-repeat scroll 0 -21px;
+}
+.formButton_photo:active {
+	background:transparent url(../images/v5/btn_photo.gif) no-repeat scroll 0 -42px;
+}
+
+#headerSearchForm .formButton_validSearch{
+	margin:15px 0 0 5px;
+}
+#footerSearchForm .formButton_validSearch{
+	margin:10px 0 0 5px;
+}
+
+th.sortUp { 
+	background-image: url(../images/header_arrow_up.gif); 
+	background-position:1px center; 
+	background-repeat:no-repeat; 
+}
+th.sortDown  { 
+	background-image: url(../images/header_arrow_down.gif); 
+	background-position:1px center; 
+	background-repeat:no-repeat; 
+}
+th.sortable  { 
+	background-image: url(../images/header_sortable.gif); 
+	background-position:1px center; 
+	background-repeat:no-repeat; 
+}
+
+
+#annonceForm .annonceContent .formButton_valid {
+	margin-left:0px;
+}
+
+/*Commantaire en page Actualité Détail*/
+.lipLinerFoot .formButton_add,
+.lipLinerFoot .formButton_ok {
+	float:right;
+	margin:5px; 
+}
+

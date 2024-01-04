@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="commentAct" realname="commentAct" primarykey="commentAct_id" />
+    </datasources>
+    <record>
+
+    <property name="commentAct_id" fieldname="commentAct_id" datatype="autoincrement"/>
+    <property name="commentAct_actualiteId" fieldname="commentAct_actualiteId" datatype="int" required="true"/>
+    <property name="commentAct_utilisateurId" fieldname="commentAct_utilisateurId" datatype="int" required="true"/>
+    <property name="commentAct_texte" fieldname="commentAct_texte" datatype="string" required="true"/>
+    <property name="commentAct_dateCreation" fieldname="commentAct_dateCreation" datatype="datetime" required="true"/>
+    <property name="commentAct_publier" fieldname="commentAct_publier" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

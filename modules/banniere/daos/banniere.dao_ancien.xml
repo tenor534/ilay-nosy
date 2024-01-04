@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="banniere" realname="banniere" primarykey="banniere_id" />
+    </datasources>
+    <record>
+
+    <property name="banniere_id" fieldname="banniere_id" datatype="autoincrement"/>
+    <property name="banniere_nom" fieldname="banniere_nom" datatype="string" required="true"/>
+    <property name="banniere_logo" fieldname="banniere_logo" datatype="string" required="true"/>
+    <property name="banniere_banniere" fieldname="banniere_banniere" datatype="string" required="true"/>
+    <property name="banniere_typeZone" fieldname="banniere_typeZone" datatype="int" required="true"/>
+    <property name="banniere_height" fieldname="banniere_height" datatype="int" required="true"/>
+    <property name="banniere_width" fieldname="banniere_width" datatype="int" required="true"/>
+    <property name="banniere_weight" fieldname="banniere_weight" datatype="int" required="true"/>
+    <property name="banniere_url" fieldname="banniere_url" datatype="string" required="true"/>
+    <property name="banniere_typeLink" fieldname="banniere_typeLink" datatype="int" required="true"/>
+    <property name="banniere_dateCreation" fieldname="banniere_dateCreation" datatype="date" required="true"/>
+    <property name="banniere_dateModification" fieldname="banniere_dateModification" datatype="date" required="true"/>
+    <property name="banniere_dateDebutPub" fieldname="banniere_dateDebutPub" datatype="datetime" required="true"/>
+    <property name="banniere_dateFinPub" fieldname="banniere_dateFinPub" datatype="datetime" required="true"/>
+    <property name="banniere_vue" fieldname="banniere_vue" datatype="int" required="true"/>
+    <property name="banniere_click" fieldname="banniere_click" datatype="int" required="true"/>
+    <property name="banniere_publierHome" fieldname="banniere_publierHome" datatype="int" required="true"/>
+    <property name="banniere_publierInternal" fieldname="banniere_publierInternal" datatype="int" required="true"/>
+
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

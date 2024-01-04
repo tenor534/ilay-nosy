@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="forfait" realname="forfait" primarykey="forfait_id" />
+    </datasources>
+    <record>
+
+    <property name="forfait_id" fieldname="forfait_id" datatype="autoincrement"/>
+    <property name="forfait_packId" fieldname="forfait_packId" datatype="int" required="true"/>
+    <property name="forfait_libelle" fieldname="forfait_libelle" datatype="string" required="true"/>
+    <property name="forfait_nbAnnonce" fieldname="forfait_nbAnnonce" datatype="int" required="true"/>
+    <property name="forfait_nbPhoto" fieldname="forfait_nbPhoto" datatype="int" required="true"/>
+    <property name="forfait_nbCaractere" fieldname="forfait_nbCaractere" datatype="int" required="true"/>
+    <property name="forfait_dureeParution" fieldname="forfait_dureeParution" datatype="int" required="true"/>
+    <property name="forfait_voirPhoto" fieldname="forfait_voirPhoto" datatype="int" required="true"/>
+    <property name="forfait_voirCoordonnee" fieldname="forfait_voirCoordonnee" datatype="int" required="true"/>
+    <property name="forfait_affichePhoto" fieldname="forfait_affichePhoto" datatype="int" required="true"/>
+    <property name="forfait_afficheCoordonnee" fieldname="forfait_afficheCoordonnee" datatype="int" required="true"/>
+    <property name="forfait_ajoutLien" fieldname="forfait_ajoutLien" datatype="int" required="true"/>
+    <property name="forfait_hasPlus" fieldname="forfait_hasPlus" datatype="int" required="true"/>
+    <property name="forfait_statistique" fieldname="forfait_statistique" datatype="int" required="true"/>
+    <property name="forfait_texteMEV" fieldname="forfait_texteMEV" datatype="int" required="true"/>
+    <property name="forfait_nbPhotoAdd" fieldname="forfait_nbPhotoAdd" datatype="int" required="true"/>
+    <property name="forfait_prix" fieldname="forfait_prix" datatype="int" required="true"/>
+    <property name="forfait_prixPlus" fieldname="forfait_prixPlus" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

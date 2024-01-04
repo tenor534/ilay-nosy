@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="utilisateur" realname="utilisateur" primarykey="utilisateur_id" />
+    </datasources>
+    <record>
+
+    <property name="id" fieldname="utilisateur_id" datatype="autoincrement"/>
+    <property name="profilId" fieldname="utilisateur_profilId" datatype="int" required="true"/>
+    <!--property name="service" fieldname="utilisateur_serviceId" datatype="int" required="true"/-->
+    <property name="nom" fieldname="utilisateur_nom" datatype="string" required="true"/>
+    <property name="prenom" fieldname="utilisateur_prenom" datatype="string" required="true"/>
+    <property name="email" fieldname="utilisateur_email" datatype="string" required="true"/>
+    <property name="login" fieldname="utilisateur_login" datatype="string" required="true"/>
+    <property name="password" fieldname="utilisateur_password" datatype="string"/>
+    <property name="statut" fieldname="utilisateur_statut" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+   <factory>
+     <method name="getByLoginPassword" type="selectfirst">
+         <parameter name="login" />
+         <parameter name="password" />
+         <!--parameter name="service" /-->
+
+         <conditions>
+             <eq property="login" expr="$login" />
+             <eq property="password" expr="$password" />
+             <!--eq property="service" expr="$service" /-->
+         </conditions>
+     </method>
+
+     <method name="getByLogin" type="selectfirst">
+         <parameter name="login" />
+
+         <conditions>
+             <eq property="login" expr="$login" />
+         </conditions>
+     </method>
+
+     <method name="updatePassword" type="update">
+         <parameter name="login" />
+         <parameter name="password" />
+
+         <values>
+             <value property="password" expr="$password"/>
+         </values>
+         <conditions>
+             <eq property="login" expr="$login" />
+         </conditions>
+     </method>
+
+     <method name="deleteByLogin" type="delete">
+         <parameter name="login" />
+         <conditions>
+             <eq property="login" expr="$login" />
+         </conditions>
+     </method>
+
+     <method name="findByLogin" type="select">
+         <parameter name="pattern" />
+         <conditions>
+             <like property="login" expr="$pattern" />
+         </conditions>
+         <order>
+             <orderitem property="login" way="asc" />
+          </order>
+     </method>
+     <method name="findAll" type="select">
+         <order>
+             <orderitem property="login" way="asc" />
+         </order>
+     </method>
+
+   </factory>
+</dao>

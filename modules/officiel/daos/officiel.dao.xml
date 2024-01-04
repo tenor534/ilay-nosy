@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="officiel" realname="officiel" primarykey="officiel_id" />
+    </datasources>
+    <record>
+
+    <property name="officiel_id" fieldname="officiel_id" datatype="autoincrement"/>
+    <property name="officiel_categorieOffId" fieldname="officiel_categorieOffId" datatype="int" required="true"/>
+    <property name="officiel_reference" fieldname="officiel_reference" datatype="string" required="true"/>
+    <property name="officiel_titre" fieldname="officiel_titre" datatype="string" required="true"/>
+    <property name="officiel_resume" fieldname="officiel_resume" datatype="string" required="true"/>
+    <property name="officiel_texte" fieldname="officiel_texte" datatype="string" required="true"/>
+    <property name="officiel_photo" fieldname="officiel_photo" datatype="string" required="true"/>
+    <property name="officiel_dateCreation" fieldname="officiel_dateCreation" datatype="date" required="true"/>
+    <property name="officiel_dateModification" fieldname="officiel_dateModification" datatype="date" required="true"/>
+    <property name="officiel_datePublication" fieldname="officiel_datePublication" datatype="date" required="true"/>
+    <property name="officiel_source" fieldname="officiel_source" datatype="string" required="true"/>
+    <property name="officiel_vue" fieldname="officiel_vue" datatype="int" required="true"/>
+    <property name="officiel_fichier" fieldname="officiel_fichier" datatype="string" required="true"/>
+    <property name="officiel_visite" fieldname="officiel_visite" datatype="int" required="true"/>
+    <property name="officiel_publier" fieldname="officiel_publier" datatype="int" required="true"/>
+    <property name="officiel_publierHome" fieldname="officiel_publierHome" datatype="int" required="true"/>
+    <property name="officiel_laUne" fieldname="officiel_laUne" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="vehicule" realname="vehicule" primarykey="vehicule_id" />
+    </datasources>
+    <record>
+
+    <property name="vehicule_id" fieldname="vehicule_id" datatype="autoincrement"/>
+
+	<property name="vehicule_annonceId" fieldname="vehicule_annonceId" datatype="int" required="true"/>
+	<property name="vehicule_origine" fieldname="vehicule_origine" datatype="string" required="true"/>
+	<property name="vehicule_marqueId" fieldname="vehicule_marqueId" datatype="int" required="true"/>
+	<property name="vehicule_modeleId" fieldname="vehicule_modeleId" datatype="int" required="true"/>
+	<property name="vehicule_version" fieldname="vehicule_version" datatype="string" required="true"/>
+	<property name="vehicule_premiereMain" fieldname="vehicule_premiereMain" datatype="int" required="true"/>
+	<property name="vehicule_type" fieldname="vehicule_type" datatype="int" required="true"/>
+	<property name="vehicule_transmission" fieldname="vehicule_transmission" datatype="int" required="true"/>
+	<property name="vehicule_nbCylindre" fieldname="vehicule_nbCylindre" datatype="int" required="true"/>
+	<property name="vehicule_tailleMoteur" fieldname="vehicule_tailleMoteur" datatype="int" required="true"/>
+	<property name="vehicule_motricite" fieldname="vehicule_motricite" datatype="int" required="true"/>
+	<property name="vehicule_carburant" fieldname="vehicule_carburant" datatype="int" required="true"/>
+	<property name="vehicule_kilometrage" fieldname="vehicule_kilometrage" datatype="int" required="true"/>
+	<property name="vehicule_nbPorte" fieldname="vehicule_nbPorte" datatype="int" required="true"/>
+	<property name="vehicule_nbPassager" fieldname="vehicule_nbPassager" datatype="int" required="true"/>
+	<property name="vehicule_airClimatise" fieldname="vehicule_airClimatise" datatype="int" required="true"/>
+	<property name="vehicule_couleurExterne" fieldname="vehicule_couleurExterne" datatype="string" required="true"/>
+	<property name="vehicule_couleurInterne" fieldname="vehicule_couleurInterne" datatype="string" required="true"/>
+	<property name="vehicule_option" fieldname="vehicule_option" datatype="string" required="true"/>
+	<property name="vehicule_garantie" fieldname="vehicule_garantie" datatype="string" required="true"/>
+	<property name="vehicule_financement" fieldname="vehicule_financement" datatype="string" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

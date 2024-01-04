@@ -1,0 +1,138 @@
+* {margin: 0; padding: 0;}
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 90%; padding: 5px;}
+p {width: 97%; padding: 5px; margin-top: 10px}
+ul {width: 95%; text-align: justify; padding: 3px;}
+blockquote {text-align: justify;}
+hr {clear: both;}
+
+#signature {text-align: right; font-size: 11px;}
+#menu {text-align: center;}
+#general {background-color: #fff; width: 95%; padding: 5px; margin: 10px}
+#titre {text-align: right; font-size: 120%; color: #ff9900; clear: both;}
+#haut {margin-top: 2px;}
+#traduction {text-align: right;}
+#retour {text-align: center;}
+#sommaire {text-align: right;}
+#maing {position: absolute; width: 45%; padding: 10px; border: solid 1px #bbb;}
+#maind {position: absolute; margin-left: 50%; width: 45%; padding: 10px; border: solid 1px #bbb;}
+#netg {position: absolute; width: 40%; padding: 7px; border: solid 1px #909;}
+#netd {position: absolute; margin-left: 50%; width: 40%; padding: 7px; border: solid 1px #909;}
+#pied {position: relative; margin-top: 40%;}
+
+.div50 {width: 50%; float: left;}
+.divdroite {width: 50%; clear: right;}
+.divideo {width: 360px; float: left; padding: 5px; color: #666;}
+.clear {clear: both}
+.imgpadding {padding: 2px;}
+.liens li {list-style: none; text-align: center; background-color: #14309c;}
+.general {width: 95%; padding: 5px;}
+.cadre {
+	text-indent: 5px;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #FF9900;
+	height: auto;
+	width: 65%;
+	text-decoration: none;
+	background-color: #DBDBDB;
+	text-align: justify;
+}
+.droite {text-align: right;}
+.trait {text-align: centre; width: 33%; noshade: noshade; font-size: 1;}
+.fondorange {background-color: #ffee00;}
+.lettrine {
+	float: left;
+	padding: 5px;
+	color: #FFFFFF;
+}
+.lettrinephoto {float: left; padding: 10px; color: #FFFFFF; width: 400px;}
+.lettrine3 {float: left;	padding: 10px;}
+.lettrine2 {float: right; padding: 10px;}
+.justif {text-align: justify; padding-top: 5px;}
+.titreMR {font-size: large; color: #ff9900; font-weight: bold; margin-right:20px;}
+.titre {font-size: large; color: #ff9900; font-weight: bold;}
+.decalage {margin-left: 15px;}
+.decalageX {margin-left: 15px; margin-right: 50px;}
+.decalage2 {margin-left: 40px;}
+.bordure {text-align: center; border-style: solid; border-width: 1px; padding: 10px; margin-left: 10%; width: 50%}
+.bordure2 {border-style: solid; border-width: 1px; padding: 10px; margin-left: 30%; width: 60%;}
+.bordure3 {border-style: solid; border-width: 1px; padding: 10px; margin-left: 5%; width: 80%}
+.bordure4 {text-align: center; border-style: solid; border-width: 1px; padding: 5px; margin-left: 7%;}
+.bordure {text-align: center; border-style: solid; border-width: 1px; padding: 10px; margin-left: 10%; width: 50%}
+.marge {margin-top: 20px}
+.marged {position: absolute; width: 20%; margin-left: 80%; float: right;}
+.margeg {position: absolute; width: 75%; float: left;}
+.clear {clear: both;}
+.grec {font-family: Symbol;	font-size: 12px; color: #000000; text-decoration: none;}
+.bleu {color: #330099;}
+.rouge {color: #ff3333;}
+.gris {font-weight: bold; color: #333333;}
+.angle {width: 20%; margin-left: 2px; border-width: 1px; border-style: solid; border-color: #333333; padding: 1%; border-top: 50%; float: left; text-align: justify;}
+.angle2 {width: 20%; margin-left: 2px; border-width: 1px; border-style: solid; border-color: #333333; padding: 1%; border-top: 50%; float: left; text-align: justify;}
+.angle3 {width: 20%; margin-left: 2px; border-width: 1px; border-style: solid; border-color: #333333; padding: 1%; border-top: 50%; float: left; text-align: justify;}
+.angle4 {width: 20%; margin-left: 2px; border-width: 1px; border-style: solid; border-color: #333333; padding: 1%; border-top: 50%; clear: right; text-align: justify;}
+
+.asterix {clear: left; text-align: center; font-size: 18px; font-weight: bold; color: #ff9900;}
+.espace {color: #ffffff;}
+.titrepolit {text-align: right; font-size: 16px; color: #ff9900;}
+.titrelien {color: #000000; text-decoration: none; font-size: 14px; font-style: normal; font-weight: bold;}
+.titrejaune {color: #FFCF40; font-size: 14px; font-weight: bold;}
+.titrerouge {font-size: 24px; font-weight: bold; color: #CC0000; text-decoration: none;}
+.titre18 {color: #FFCF40; text-decoration: none; font-size: 18px;}
+.titre16 {font-size: 16px; font-weight: bold; text-decoration: none;}
+.titre15 {font-size: 15px; font-weight: bold; text-decoration: none;}
+.txtgras { color: #000000; font-weight: bold;}
+.ital {text-decoration: none; font-style: italic; color: #000000;}
+.italgras {text-decoration: none; font-style: italic; font-weight: bold;}
+.pttxt {text-decoration: none; color: #000000; 	font-size: 10px;}
+.pttxtagenda {text-decoration: none; color: #000000; 	font-size: 11px; padding-left: 40px}
+.txt {text-decoration: none; color: #000000; 	font-size: 12px;}
+.contact {font-size: xx-large; font-weight: bold; color: #014493; text-align: center;}
+.vertrugby {color: #49aa43}
+.bleurugby {color: #014493}
+
+.lienrugby {font-weight: bold; color: #78256C; text-decoration: none;}
+a.lienrugby:hover {font-weight: bold; color: #000000; text-decoration: underline;}
+
+.lienBsoul {font-weight: bold; text-decoration: none; color: #000000;}
+a.lienBsoul:hover {font-weight: bold; text-decoration: underline; color: #FF0000;}
+
+.liensoul {text-decoration: none; color: #000000;}
+a.liensoul:hover {text-decoration: underline; color: #FF0000;}
+
+.lienrouge {font-weight: bold; color: #CC0000; text-decoration: none;}
+a.lienrouge:hover {font-weight: bold; color: #FF0000; text-decoration: underline;}
+
+.lienorange {
+	font-weight: bold;
+	color: #ff9900;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.lienbleu {
+	font-weight: bold;
+	color: #00319C;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a.lienorange:hover {font-weight: bold; color: #000000; text-decoration: underline;}
+
+h1 {font-size: 30px; font-style: normal; letter-spacing: 2px; color: #ff9900; text-align: left;}
+h2 {font-size: 26px; font-style: normal; color: #ff9900; text-align: left;}
+h3 {font-size: 24px; color: #ff9900;}
+h4 {font-size: 20px; font-weight: normal; margin-top: 7px; margin-bottom: 7px; color: #ff9900;}
+h5 {font-size: 18px; font-weight: normal; margin-top: 5px; margin-bottom: 5px; text-align: left; color: #ff9900;}
+h6 {font-size: 15px; font-weight: bold; margin-top: 2px; margin-bottom: 1px; color: #ff9900;}
+.encadre {
+	text-align: justify;
+	text-indent: 2px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CC9900;
+	border-right-color: #CC9900;
+	border-bottom-color: #CC9900;
+	border-left-color: #CC9900;
+}

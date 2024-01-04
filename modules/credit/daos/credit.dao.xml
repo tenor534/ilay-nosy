@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="credit" realname="credit" primarykey="credit_id" />
+    </datasources>
+    <record>
+
+    <property name="credit_id" fieldname="credit_id" datatype="autoincrement"/>
+    <property name="credit_abonnementId" fieldname="credit_abonnementId" datatype="int" required="true"/>
+    <property name="credit_forfaitId" fieldname="credit_forfaitId" datatype="int" required="true"/>
+    <property name="credit_isPlus" fieldname="credit_isPlus" datatype="int" required="true"/>
+    <property name="credit_codePIN" fieldname="credit_codePIN" datatype="string" required="true"/>
+    <property name="credit_password" fieldname="credit_password" datatype="string" required="true"/>
+    <property name="credit_dateUse" fieldname="credit_dateUse" datatype="datetime" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

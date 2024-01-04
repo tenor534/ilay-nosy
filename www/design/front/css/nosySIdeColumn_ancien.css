@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************************
+
+box-categories.css
+
+******************************************************************************/
+
+#box_cat .col3 { 
+	float: left; 
+	width: 197px; 
+	margin: 0 10px 0 0; 
+}
+
+#box_cat .box_inner { 
+	width: 630px; 
+	margin:15px 0 0 20px;
+}
+#t_box_cat span { 
+	/*background-image: url(/include/img/0/box-categories/t-box-categories.gif);*/
+}
+
+#box_cat .cat_retract { 
+	margin: 0 0 10px 0; 
+	padding: 0 0 5px 0; 
+	background: url(../images/v6/line-double.gif) 0 bottom repeat-x;
+}
+#box_cat .close { 
+	padding: 0 0 12px; 
+}
+#box_cat .cat_retract img { 
+	margin: 0 0 0 3px; 
+}
+
+/* bloc image */
+#box_cat .cat_box { 
+	width:197px; 
+	overflow:hidden; 
+	padding: 9px 0 0 0; 
+	background: url(../images/v6/bg-box-cat.gif) 0 0 no-repeat; 
+}
+
+#box_cat .cat_box h4 { 
+	float:left; 
+	display:block; 
+	font-weight:bold;
+	font-size:110%;
+	width:70%; 
+	margin:0; 
+	padding: 0 0 6px 11px;
+}
+#box_cat .cat_box p { 
+	font-size: 92%; /* 11px */ 
+	text-align: right; 
+	overflow: hidden; 
+	width:100%; 
+}
+#box_cat .cat_box p a { 
+	display: block; 
+	margin: 0 10px 0 0; 
+}
+
+.cat_box_action_bt { 
+	display: block; 
+	width: 30px; 
+	height: 13px; 
+	background: url(../images/v6/quatre-boutons.gif) center -13px no-repeat; 
+	font-size: 80%; 
+	display:block; 
+	text-indent:-9000px; 
+	cursor:pointer; 
+}
+.close .cat_box_action_bt { 
+	background-position: 
+	center 0px!important; 
+}
+#box_cat .cat_box_action_bt { 
+	float: right; 
+	margin: 2px 10px 0 0; 
+}
+
+#box_cat .cat_box_foot { 
+	width: 197px; 
+	height: 6px; 
+	overflow: hidden; 
+	background: url(../images/v6/bg-box-cat-foot.gif); 
+	font-size: 1px; 
+}
+
+
+#box_cat ul h4, #box_cat ul h5 { 
+	margin: 0; /*color:#005e9e;*/ 
+	font-weight:bold;
+	font-size:115%;
+}
+
+#box_cat .cat_retract .cat_supp { 
+	margin: 5px 0 0;
+}
+#box_cat ul { 
+	padding: 0 12px 7px;
+}
+#box_cat ul ul { 
+	margin: 0 7px; 
+	padding: 0;
+}
+#box_cat ul ul li a { 
+	color:#A97E6E;
+}
+
+.icons { 
+	display: block; 
+	width: 191px; 
+	height: 86px; 
+	background-repeat: no-repeat; 
+}
+
+.num {
+	color:#777777;
+	font-weight:normal;
+}
+h4 .num {
+	font-size:71%;
+}
+
+.link, .cat_box p a {
+	background:transparent url(../images/v6/icn-arrow-link.gif) no-repeat scroll right 4px;
+	padding-right:14px !important;
+	text-decoration:underline;
+}
+.annonceContent {
+	margin:0 0 0 10px;
+	padding-top:0;
+	width:640px;
+}

@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#white
+h1{
+	margin:0 0 0 10px;
+	height:45px;
+	text-indent: -9999px;
+	color:#fff;
+	font:bold 24px "Helvetica Neue", Arial, sans-serif
+}
+
+#wrapper.forum #neapolitan #main #white
+h1{
+	background:#fff url(../images/reviewsProducts/pageTitleBg.gif) no-repeat
+}
+
+#leftColumn{
+	float:left;
+	clear:left
+}
+#leftColumn{
+	float:left;
+	clear:left
+}
+
+#finder,#reviewCriteria,#editorsBlog, #homepageBrafton{
+	margin-left:10px;
+	width:170px;
+	margin-bottom:0
+}
+#reviewCriteria{
+	margin-top:10px
+}
+#finder,#editorsBlog, #homepageBrafton{
+	background:#f4eee3 url(../images/reviewsProducts/headersBg.gif) repeat-x;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:5px solid #dcd7cd
+}
+#editorsBlog, #homepageBrafton{
+	background-color:#e4f7ff;
+	border-bottom:5px solid #caf0ff
+}
+#editorsBlog p, #editorsBlog
+h4{
+	padding:5px 0
+}
+.editorsBlogContent{
+	padding:0
+	10px 10px 10px;
+	font-size:10px;
+	height:1%
+}
+#editorsBlog
+img{
+	border:1px
+	solid #caf0ff;
+	padding:5px;
+	margin:3px
+	0 3px 3px;
+	background-color:#fff;
+	float:right
+}
+#finder h3, #editorsBlog, #homepageBrafton 
+h3{
+	color:#fff;
+	font:bold 14px "Helvetica Neue", Arial, sans-serif;
+	padding:3px 5px 10px 10px;
+}
+
+#homepageBrafton h1 {
+	border-bottom:1px solid #FFFFFF;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	vertical-align:middle;
+}
+
+#homepageBrafton h1 a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#homepageBrafton div.braftonFoot {
+	border-top:1px solid #CAF0FF;
+	padding:8px;
+}
+
+#homepageBrafton div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:8px;
+	width:154px;
+}
+#homepageBrafton div.articleTitle {
+	float:right;
+	margin-left:4px;
+	margin-right:15px;
+	width:83px;
+}
+#homepageBrafton div.articleTitle a {
+	font-size:12px;
+	font-weight:bold;
+	line-height:14px;
+}
+#homepageBrafton div.article p.date {
+	color:#C3AB9E;
+	font-size:10px;
+}
+#homepageBrafton div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:8px;
+	width:154px;
+}
+
+#homepageBrafton .borderBlue {
+	border-top:1px solid #CAF0FF;
+}
+
+
+
+
+
+

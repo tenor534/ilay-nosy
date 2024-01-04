@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="sujet" realname="sujet" primarykey="sujet_id" />
+    </datasources>
+    <record>
+
+    <property name="sujet_id" fieldname="sujet_id" datatype="autoincrement"/>
+    <property name="sujet_utilisateurId" fieldname="sujet_utilisateurId" datatype="int" required="true"/>
+    <property name="sujet_forumId" fieldname="sujet_forumId" datatype="int" required="true"/>
+    <property name="sujet_titre" fieldname="sujet_titre" datatype="string" required="true"/>
+    <property name="sujet_reference" fieldname="sujet_reference" datatype="string" required="true"/>
+    <property name="sujet_dateCreation" fieldname="sujet_dateCreation" datatype="date" required="true"/>
+    <property name="sujet_dateModification" fieldname="sujet_dateModification" datatype="date" required="true"/>
+    <property name="sujet_datePublication" fieldname="sujet_datePublication" datatype="date" required="true"/>
+    <property name="sujet_vue" fieldname="sujet_vue" datatype="int" required="true"/>
+    <property name="sujet_publier" fieldname="sujet_publier" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

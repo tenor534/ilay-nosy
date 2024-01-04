@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="visite" realname="visite" primarykey="visite_id" />
+    </datasources>
+    <record>
+
+    <property name="visite_id" fieldname="visite_id" datatype="autoincrement"/>
+    <property name="visite_serverSoftware" fieldname="visite_serverSoftware" datatype="string" required="true"/>
+    <property name="visite_serverName" fieldname="visite_serverName" datatype="string" required="true"/>
+    <property name="visite_serverAddr" fieldname="visite_serverAddr" datatype="string" required="true"/>
+    <property name="visite_serverPort" fieldname="visite_serverPort" datatype="string" required="true"/>
+    <property name="visite_remoteAddr" fieldname="visite_remoteAddr" datatype="string" required="true"/>
+    <property name="visite_remotePort" fieldname="visite_remotePort" datatype="string" required="true"/>
+    <property name="visite_httpRefferer" fieldname="visite_httpRefferer" datatype="string" required="true"/>
+    <property name="visite_httpUserAgent" fieldname="visite_httpUserAgent" datatype="string" required="true"/>
+    <property name="visite_requestMethod" fieldname="visite_requestMethod" datatype="string" required="true"/>
+    <property name="visite_requestUri" fieldname="visite_requestUri" datatype="string" required="true"/>
+    <property name="visite_phpSelf" fieldname="visite_phpSelf" datatype="string" required="true"/>
+    <property name="visite_queryString" fieldname="visite_queryString" datatype="string" required="true"/>
+    <property name="visite_date" fieldname="visite_date" datatype="date" required="true"/>
+    <property name="visite_userId" fieldname="visite_userId" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

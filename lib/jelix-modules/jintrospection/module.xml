@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="http://jelix.org/ns/module/1.0">
+<!--
+Dans la conf mettre strict       = 
+car ca utilise une vieile librairie PHP4
+-->
+</module>

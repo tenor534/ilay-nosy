@@ -1,0 +1,1066 @@
+/**Balises**/
+body {
+	font-family: Verdana, Helvetica, sans-serif;
+	text-align: center;/* centrage IE/Win 5.x */
+	background: #EAE5E2;
+	padding: 0;
+	margin: 0;
+	color:#000000;
+}
+form{
+	padding:0px;
+	margin:0px;
+}
+fieldset {
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+legend {
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0em 0em 0.5em;
+}
+a {
+	color: #976B64;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/**General**/
+.hiden {
+	display: none;
+}
+.clearboth {
+	clear: both;
+}
+
+/**Positionnement**/
+.colgEnt {
+	width: 220px;
+}
+.colg, .cold, .colc, .colc2 {
+	vertical-align:top;
+}
+.colg {
+	width: 220px;
+}
+.cold{
+	padding:1px 0 0 0;
+	width: 150px;
+}
+.colc{
+	width: 594px;
+}
+.colc2{
+	width: 834px;
+}
+/**Entete**/
+#entete, #page{
+	width: 984px;
+}
+#entete {
+	margin: 0 auto;
+	text-align: right;
+	height: 130px;
+	vertical-align: top;
+}
+#page {
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+#logo {
+	background-color: #FFFFFF;
+	height: 125px;
+	width: 220px;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+#logo img {
+	margin-top: 22px;
+	border:none;
+}
+/**Centre Simple colonne**/
+#centre{
+	text-align:left;
+	margin-left:25px;
+	margin-right:50px;
+}
+#centreSimple{
+	text-align:left;
+	margin-left:25px;
+	margin-right:25px;
+}
+/**Blocs Gauche**/
+#recherche{
+	background-color: #BAAFA4;
+	padding: 20px 5px 10px 10px;
+	text-align:left;
+	width:150px;
+}
+/**Blocs Droite**/
+#acces{
+	padding: 20px 10px 10px 10px;
+	text-align:left;
+}
+#part{
+	padding: 10px 10px 10px 10px;
+	text-align:left;
+}
+#colgBloc1{
+	padding: 20px 10px 10px 10px;
+	text-align:left;
+}
+.colgBloc{
+	padding: 10px 10px 10px 10px;
+	text-align:left;
+}
+/** Bloc Présentations diverses **/
+.divCont{
+	padding:15px 10px 5px 0px;
+}
+.divCont, .divCont2{
+	margin:15px 0px 15px 0px;
+}
+/** Bloc Contenu Onglet **/
+#ongletCont, .divCont2{
+	background-color:#B09C94;
+	display:block;
+/*	margin-top:-3px;*/
+	padding:10px;
+}
+/** Bloc Contenu Tableau **/
+.divCont{
+	display:block;
+	margin-top:-3px;
+}
+#tabCont{
+	margin:10px 0px 0px 0px;
+	padding:5px 10px 5px 0px;
+}
+/**Définition des h3**/
+#recherche h3, #acces h3, #part h3, #colgBloc1 h3, .colgBloc h3{
+	margin:0;
+	padding:0;
+	font-size:0.8em;
+}
+/**Eléments de formulaires de recherche**/
+#recherche input.champs, .colgBloc input.champs{
+	width:95px;
+	font-size:0.7em;
+	border:1px solid #000000;
+	margin-top:5px;
+}
+#recherche label, #colgBloc1 label, #colgBloc1 p, .colgBloc label{
+	font-size:0.7em;
+}
+#recherche select.champs, #acces select.champs, #colgBloc1 select.champs, .colgBloc select.champs{
+	font-size:0.7em;
+	border-width:1px;
+	border-color:#000000;
+	border: thin #000000 solid;
+	margin-top:5px;
+}
+#recherche select.champs{
+	width:95px;
+}
+#acces select.champs, #colgBloc1 select.champs, .colgBloc select.champs, .colgBloc input.champs{
+	width:150px;
+}
+#recherche .bouton, #acces .bouton, #colgBloc1 .bouton, .colgBloc .bouton, #centre .boutonCenter .bouton, #centre .boutonCenter2 .bouton{
+	font-size:0.7em;
+	font-weight:bold;
+	border:1px solid #000000;
+	background-color:#EAE5E2;
+}
+#recherche .bouton, #acces .bouton, #colgBloc1 .bouton, .colgBloc .bouton{
+	padding:0px;
+	margin:0px;
+	margin-left:-1px;
+	margin-right:-1px;
+}
+#recherche_tri{
+	font-size:0.7em;
+	text-align:right;
+}
+#recherche_tri select.champs{
+	width:120px;
+}
+#recherche_tri select.champs{
+	font-size:1em;
+	border-width:1px;
+	border-color:#000000;
+	border: thin #000000 solid;
+	margin-top:5px;
+}
+/**Eléments de formulaires de recherche détaillé**/
+.divCont input.champs{
+	width:150px;
+}
+.divCont select.champs{
+		width:75px;
+}
+.divCont2 select.champs{
+		width:200px;
+}
+.divCont input.champs, .divCont select.champs, .divCont2 select.champs{
+	font-size:1em;
+}
+.divCont label{
+	font-size:0.7em;
+}
+.divCont input.champs, .divCont select.champs, .divCont2 select.champs{
+	border:1px solid #000000;
+	margin-top:5px;
+}
+#centre .boutonCenter{
+	margin-left:325px;
+}
+#centre .boutonCenter2{
+	margin-left:220px;
+}
+/**Autres éléments de formulaires**/
+.zoneLabel{
+	width:220px;
+	float:left;
+	margin-top:5px;
+}
+.zoneChamps{
+	margin:0 0 0 220px;
+	padding:0;
+}
+.zoneLabel{
+	font-size:0.7em;
+}
+.zoneLabel label{
+	font-size:1em;
+}
+.zoneChamps input.champs, .zoneChamps select.champs{
+	font-size:0.7em;
+	border:1px solid #000000;
+	width:250px;
+}
+.erreur_forum{
+	font-size:0.7em;
+	color:red;
+}
+.zoneChamps textarea.champs {
+	font-size:0.7em;
+	font-family: Arial, Helvetica, sans-serif;
+	border:1px solid #000000;
+	width:250px;
+}
+.choix{
+	float:left;
+	padding-right:10px;
+}
+/**liste dans formulaire de recherche détaillé**/
+.divCont2 ul.listCas1 li label, .divCont2  ul.listCas2 li label{
+	padding-left:10px;
+}
+.divCont2  ul.listCas1 , .divCont2 ul.listCas2 {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.divCont2, .divCont1{
+	list-style-type: none;
+	text-align:left;
+	font-size:0.7em;
+	padding:10px 5px 10px 5px;
+}
+.divCont2{
+	margin-right:10px;
+}
+.divCont2 a {
+	color: #000000;
+}
+.divCont2 input {
+	margin: 0;
+}
+/**Blocs de Positionnements dans le formulaire de recherche détaillé**/
+.bloc1{
+	float:left;
+	padding-top:6px;
+	width:150px;
+}
+.bloc2{
+	margin-left:155px;
+	font-size:0.7em;
+	font-weight:bold;
+}
+.bloc3{
+	margin-left:405px;
+}
+.blocX{
+	float:left;
+	width:250px;
+}
+.blocX2{
+	margin-left:310px;
+	margin-top:-10px;
+}
+/**Résultats de la recherche**/
+.enteteRech{
+	width:500px;
+	font-size: 0.7em;
+	padding: 10px 0;
+}
+.nbPages, .nbPages2{
+	width:200px;
+	font-size:0.7em;
+	text-align:right;
+}
+.nbPages{
+	margin:10px 0;
+	float: right;
+}
+.nbPages2{
+	margin:15px 0px 15px 540px;
+}
+.pageOn{
+	font-weight:bold;
+}
+.nbPages a, .nbPages2 a{
+	color:#000000;
+	text-decoration:none;
+}
+.nbPages a:hover, .nbPages2 a:hover{
+	text-decoration:underline;
+}
+.intituleRes, .cheminRes, .descRes{
+	padding:1px 100px 1px 30px;
+	margin-bottom:5px;
+}
+.intituleRes, .cheminRes{
+	font-size:0.7em;
+}
+.intituleRes{
+	background-color:#CBB3B1;
+}
+.cheminRes{
+	background-color:#DBCAC8;
+	color:#CC412A;
+	margin-left:30px;
+}
+.descRes{
+	background-color:#EAE1E0;
+	margin-left:60px;
+}
+.descRes p{
+	font-size:1em;
+	padding:0;
+	margin:0;
+}
+.intituleRes a, .cheminRes a{
+	color:#000000;
+	text-decoration:none;
+}
+.intituleRes a:hover, .cheminRes a:hover{
+	text-decoration:underline;
+}
+/**Encart Manifestation et Encarts spécifiques**/
+.encartManif{
+	margin:10px 0px 10px 0px;
+	padding: 7px;
+	background-color:#E6E1DC;
+}
+.encartManif ul{
+	margin: 0px;
+	padding: 0px;
+}
+.encartManif li{
+	list-style:disc;
+	list-style-position:outside;
+	margin-left:20px;
+	font-size:0.7em;
+}
+#centreSimple .encartManif li h4, #centre .encartManif li h4{
+	font-size:1em;
+	padding-left:5px;
+}
+#centreSimple .encartManif .rep, #centre .encartManif .rep {
+	text-align: right;
+}
+#centre .encartManif .menu  ul.listAct1 {
+	display:block;
+	margin:0 0 5px 0;
+	padding:0;
+	width:275px;
+}
+
+.menu{
+	padding : 10px 0px 5px 0px;
+	margin : 0px 0px 0px 0px;
+}
+.menu  ul.listAct1 , .menu ul.listAct2 {
+	display:block;
+	margin:0;
+	padding:0;
+	width:275px;
+}
+.menu  ul.listAct1{
+	float:left;
+}
+.menu  ul.listAct2{
+	margin-left:275px;
+}
+.menu  ul.listAct1 li a, .menu  ul.listAct2 li a{
+	font-size:1em;
+	color:#986660;
+	text-decoration:none;
+}
+.menu  ul.listAct1 li a:hover, .menu  ul.listAct2 li a:hover{
+	font-size:1em;
+	text-decoration:underline;
+}
+/** Illustration **/
+.illu{
+	float:left;
+	margin-right:15px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.illu2{
+	float:right;
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+/*********************/
+.description p{
+	font-size:0.7em;
+}
+
+.description p  a, .description li a {
+	color:#978B86;
+	text-decoration:none;
+}
+.description p 	a:hover, .description li a:hover{
+	text-decoration:underline;
+}
+
+.description ul{
+	padding:0;
+	margin:0;
+	list-style-type:disc;
+	list-style-position:outside;
+}
+.description li{
+	font-size:0.7em;
+	margin-left:15px;
+}
+
+
+/** Menus sommaires de partie **/
+h4 a{
+	color:#9A6761;
+	font-weight:bold;
+	text-decoration:none;
+}
+h4 a:hover{
+	text-decoration:underline;
+}
+/**Elements des blocs de droite et gauche**/
+#colgBloc1 p, #recherche p{
+	padding:0;
+	margin:0;
+	margin-top:5px;
+}
+#colgBloc1 a, #recherche a{
+	color:#000000;
+	text-decoration:none;
+}
+#colgBloc1 a:hover, #recherche a:hover{
+	text-decoration:underline;
+}
+#recherche p{
+	font-size:0.7em;
+}
+/**Elements des blocs de droite et gauche (suite)**/
+.colgBloc .liste, #colgBloc1 .liste{
+	margin-top:10px;
+}
+.colgBloc .liste ul, #colgBloc1 .liste ul {
+	padding: 0;
+	margin:0;
+}
+.colgBloc .liste li, #colgBloc1 .liste li {
+	list-style-type: disc;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:15px;
+	font-size:0.7em;
+}
+.colgBloc .liste li a, #colgBloc1 .liste li a{
+	color:#000000;
+	text-decoration:none;
+}
+.colgBloc .liste li a:hover, #colgBloc1 .liste li a:hover{
+	text-decoration:underline;
+}
+.colgBloc img, #colgBloc1 img  {
+	border:none;
+}
+/**Element de liste de la colonne de droite**/
+#part .liste{
+	margin-top:10px;
+}
+#part .liste ul {
+	padding: 0;
+	margin:0;
+}
+#part .liste li {
+	list-style-type: disc;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:15px;
+	font-size:0.7em;
+}
+#part .liste li a{
+	color:#000000;
+	text-decoration:none;
+}
+#part .liste li a:hover{
+	text-decoration:underline;
+}
+/**Element de liste de la colonne de droite (suite)**/
+#part .voir{
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#part .voir ul {
+	padding: 0;
+	margin:0;
+}
+#part .voir li {
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-right:10px;
+	font-size:0.7em;
+}
+#part .voir li a{
+	color:#000000;
+	text-decoration:none;
+}
+#part .voir li a:hover{
+	color:#000000;
+	text-decoration:underline;
+}
+/**Chemin de fer**/
+#chemin{
+	padding: 20px 0px 10px 0px;
+	text-align:left;
+	font-size:0.6em;
+	color:#D3011E;
+	width:544px;
+}
+#chemin a{
+	color:#000000;
+	text-decoration:none;
+}
+#chemin a:hover{
+	text-decoration:underline;
+}
+#chemin .on{
+	color:#000000;
+	font-weight:bold;
+}
+#chemin .off{
+	color:#999999;
+	font-weight:normal;
+}
+
+/** Liens spéciaux **/
+.divCont p a{
+	color:#9A6761;
+	text-decoration:none;
+}
+.divCont p a:hover{
+	text-decoration:underline;
+}
+/** Liens d'actions **/
+.action{
+	margin-top:10px;
+	text-align:right;
+}
+.action  ul {
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+}
+.action  li {
+	list-style-position:outside;
+	margin:0px;
+	padding:0px 10px 5px 0px;
+	margin-left:15px;
+	font-size:0.7em;
+	list-style-image: url(../_img/deco/puce_colc.gif);
+}
+.action  li a{
+	color:#000000;
+	text-decoration:none;
+}
+.action  li a:hover{
+	text-decoration:underline;
+}
+/**Presentation**/
+.accroche{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:10px;
+	/*border-top:1px solid #000000;
+	border-bottom:1px solid #000000;*/
+}
+.accroche HR, .sousAccroche HR{
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background-color: #000000;
+	border: 0;
+
+}
+.sousAccroche{
+	padding-bottom:10px;
+	padding-right:10px;
+	/*border-bottom:1px solid #000000;*/
+}
+.accroche p{
+	font-weight:bold;
+	font-size:1em;
+}
+.sousAccroche p{
+	font-size:0.9em;
+	font-style:italic;
+}
+.infoUtiles{
+	padding:2px 2px 2px 2px;
+	margin:10px 0px 10px 0px;
+}
+.infoUtiles2{
+	background-color:#C6ADA8;
+	color:#000000;
+	padding:10px 10px 10px 10px;
+	margin:30px 0px 30px 0px;
+}
+.infoUtiles ul{
+	padding:0;
+	margin:0;
+	list-style-type:disc;
+	list-style-position:outside;
+}
+.infoUtiles li{
+	font-size:0.7em;
+	margin-left:15px;
+}
+.infoUtiles li a, .infoUtiles a{
+	color:#986660;
+	text-decoration:none;
+}
+.infoUtiles2 p a{
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+.infoUtiles li a:hover, .infoUtiles a:hover, .infoUtiles2 p a:hover{
+	text-decoration:underline;
+}
+/**Contenu**/
+.contenu{
+	background-color:#E6E1DC;
+	padding:5px;
+	margin: 10px 0px 10px 0px;
+}
+
+.contenu p a{
+	/* color:#DC3B4B; */ /* rouge */
+	color:#978B86; /* marron */
+	text-decoration:none;
+}
+.contenu p a:hover{
+	text-decoration:underline;
+}
+
+
+.contenu ul{
+	margin: 0px;
+	padding: 0px;
+}
+.contenu li{
+	list-style:disc;
+	list-style-position:outside;
+	margin-left:20px;
+	font-size:0.7em;
+}
+.contenu li a{
+	color:#000000;
+	text-decoration:none;
+}
+.contenu li a{
+	text-decoration:underline;
+}
+.contenu li .lien a { color: #DC3B4B !important; text-decoration: none; margin-left:20px;}
+.contenu li .lien a:hover { color: #DC3B4B; text-decoration: underline; margin-left:20px;}
+
+.contenu li .titreLien a { color: #000000 !important; text-decoration: none;}
+.contenu li .titreLien a:hover { color: #000000; text-decoration: underline;}
+
+.contenu .lien { padding:0; margin:0px 0px 0px 0px; color:#DC3B4B; }
+.contenu .titreLien { padding:0px 20px 0px 0px; margin:0;}
+/**contenu general**/
+#centre h3, #centreSimple h3{
+	font-size:0.8em;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	margin-top:10px;
+}
+#centre h4, #centreSimple h4{
+	font-size:0.7em;
+	font-weight:bold;
+	margin:5px 0px 5px 0px;
+	padding:0;
+}
+#centre h5, #centreSimple h5{
+	font-size:0.7em;
+	color:#9A6761;
+	margin:0;
+	padding:0;
+}
+#centre h3, #centre h4, #centreSimple h3, #centreSimple h4{
+	color:#000000;
+}
+#centre p, #centreSimple p{
+	font-size:0.7em;
+	text-align:justify;
+	margin:0;
+	padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#centre .messageErreur {
+	font-size:0.7em;
+	text-align:justify;
+	margin:0;
+	padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
+	color:#FF0000;
+	font-weight:bold;
+}
+#centre .liste, #centreSimple .liste{
+	margin-top:10px;
+}
+#centre .liste ul, #centreSimple .liste ul {
+	padding: 0;
+	margin:0;
+}
+#centre .liste li, #centreSimple .liste li {
+	list-style-type: disc;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:15px;
+	font-size:0.7em;
+	color:#D3011E;
+}
+#centre .liste li a, #centreSimple .liste li a{
+	color:#000000;
+	font-weight:bold;
+	text-decoration:none;
+}
+#centre .liste li a:hover, #centreSimple .liste li a:hover{
+	font-weight:bold;
+	text-decoration:underline;
+}
+#centre .liste li p, #centreSimple .liste li p{
+	font-size:1em;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#000000;
+}
+
+/**Centre (suite)**/
+#centre .voir, #centreSimple .voir{
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#centre .voir ul, #centreSimple .voir ul {
+	padding: 0;
+	margin:0;
+}
+#centre .voir li, #centreSimple .voir li  {
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:15px;
+	font-size:0.7em;
+	list-style-image: url(../_img/deco/puce_colc.gif);
+}
+#centre .voir li a, #centreSimple .voir li a{
+	color:#867E77;
+	text-decoration:none;
+}
+#centre .voir li a:hover, #centreSimple .voir li a:hover{
+	color:#867E77;
+	text-decoration:underline;
+}
+/**Pied de page**/
+#pied{
+	text-align:center;
+	font-size:0.6em;
+	padding-top:20px;
+	padding-bottom:10px;
+	vertical-align:bottom;
+}
+#pied a{
+	color:#867E77;
+	text-decoration:none;
+}
+#pied a:hover{
+	text-decoration:underline;
+}
+/** Boutons/icônes **/
+.boutonnerie, .boutonnerie2{
+	float:right;
+	/* width:200px; */
+	width:93px;
+	text-align:right;
+	margin-top:-5px;
+	margin-right:5px;
+}
+.boutonnerie{
+	/*margin-left:339px;*/
+}
+.boutonnerie2{
+	/*margin-left:580px;*/
+}
+.noBorder, .boutonnerie img, .boutonnerie2 img{
+	border:none;
+}
+/** Tableaux **/
+.tableau {
+	margin-top:10px;
+	width:714px;
+}
+.tableauOng {
+	margin-top:10px;
+	width:725px;
+}
+.tableau TH, .tableau TD, .tableauOng TH, .tableauOng TD{
+	font-size:0.7em;
+	text-align:left;
+}
+
+.tableauOng td.c1 {
+/*	background-color:red !important; */
+	text-align:left;
+}
+.tableauOng td.c2 {
+/*	background-color:green !important; */
+	white-space: nowrap;
+	text-align:right !important;
+}
+
+
+/**Tableaux de type général*/
+#tabCont .tableau TH, #tabCont .tableau TD{
+	border-bottom: 5px solid #FFFFFF;
+	padding:5px 5px 5px 5px;
+	vertical-align:top;
+}
+#tabCont .tableau TH{
+	background-color:#DBCDC7;
+	text-align:center;
+	vertical-align:middle;
+}
+#tabCont .tableau TD{
+	background-color:#E6E1DC;
+	text-align: center;
+}
+/**Tableaux avec quelques variantes**/
+#tabCont .tableau TR.centrer TD{
+	text-align:center;
+}
+#tabCont .tableau TD.entete{
+	background-color:#DBCDC7;
+}
+#tabCont .tableau TH.titTab1{
+	background-color:#B9ABA1;
+	text-align:center;
+	text-transform:uppercase;
+	border-bottom:2px solid #B9ABA1;
+}
+#tabCont .tableau TH.titTab2{
+	background-color:#DBCDC7;
+	text-align:center;
+}
+#tabCont .tableau TH.col1, #tabCont .tableau TH.col2, #tabCont .tableau TH.col3{
+	background-color:#E6E1DC;
+}
+/** Largeur de colonnes et définition de particularités pour un type de tableau **/
+#tabCont .tableau TD.cont5{
+	text-align:center;
+}
+#tabCont .tableau TD.cont5 img{
+	border:none;
+}
+#tabCont .tableau TD.cont1{
+	background-color:#DBCDC7;
+}
+#tabCont ul, #divCont ul, .divCont ul {
+ margin: 1em 0em 1em 1em;
+ padding: 0px;
+ line-height: 1em;
+}
+
+#tabCont li, #divCont li, .divCont li  {
+ font-size: 0.7em;
+}
+
+/**Divers**/
+.alignTop{
+	vertical-align:top;
+}
+.sep{
+	margin-top:10px;
+}
+.sep2{
+	margin-top:5px;
+}
+.sep, .sep2{
+	font-size:1px;
+}
+.sep3{
+	margin-top:15px;
+}
+.sep4{
+	margin-top:25px;
+}
+.clearer{
+	clear:both;
+	font-size:1px;
+	line-height:1px;
+}
+.centrer{
+	text-align:center;
+}
+.gras{
+	font-weight:bold;
+}
+.cm_ok, .cm_error {
+	font-size:0.7em;
+	text-align:justify;
+	margin:5px 0;
+	padding:0;
+}
+.disp_doc {
+	font-size: 0.7em;
+	margin-bottom: 5px;
+	color: #DA2719;
+	text-align: right;
+}
+.disp_doc a {
+	text-decoration: none;
+	color: #000000;
+	text-align: right;
+}
+.disp_doc a:hover {
+	text-decoration: underline;
+}
+.liens_rech {
+	font-size: 0.7em;
+	float: right;
+	margin-top: 25px;
+}
+.ongl_rech {
+	font-size: 0.8em;
+	margin: 25px 0 10px;
+}
+.ongl_rech span {
+	padding: 5px;
+	background: #936865;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.fleche {
+	color: #986660;
+	text-decoration: none;
+	background: url(../_img/deco/puce_colc.gif) no-repeat 0px 3px;
+	padding: 0px 0px 0px 10px;
+}
+:hover.fleche {
+	text-decoration: underline;
+}
+.sous-nav {
+	font-size: 0.7em;
+	margin: 1em 0em;
+}
+#rss{
+	padding: 10px 10px 10px 10px;
+	text-align:left;
+}
+/* RSS */
+#rss h3 {
+	margin:0;
+	padding:0;
+	font-size:0.8em;
+}
+#rss .liste{
+	margin-top:10px;
+}
+#rss .liste ul {
+	padding: 0;
+	margin:0;
+}
+#rss .liste li {
+	list-style-type: none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+	margin-left:15px;
+	margin-top:5px;
+	font-size:0.7em;
+}
+#rss .liste li a{
+	color:#000000;
+	text-decoration:none;
+}
+#rss .liste li a:hover{
+	text-decoration:underline;
+}
+
+#wrapper2 {
+	margin: 0 auto;
+	width: 984px;
+	padding:20px 0 0 0;
+	text-align:left;
+	background-color: #fff;
+	}
+#footer {
+	font-size:0.6em;
+	text-align:center;
+	color:#553a36;
+	text-decoration:underline;
+	margin:0 0 15px 0;
+	}
+	#footer a {
+		color:#553a36;
+		text-decoration:underline;
+		}
+		#footer a:hover {
+			color:#553a36;
+			text-decoration:underline;
+			}

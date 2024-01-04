@@ -1,0 +1,145 @@
+tmt_globalPatterns.hexa = new RegExp("[a-fA-F0-9]");
+
+var g_supprvisuel=1;
+var ServerPath;
+var champs;
+
+window.onbeforeunload = function(e){
+
+	if((g_supprvisuel && $('#pack_id').val()=="") || ($('[@name^=fichierasuppr_b]').length>0)){
+		suppr='';
+		$('[@name^=fichierasuppr_b]').each(function(index){
+			if($(this).val().length>0){
+				if($(this).val().toLowerCase()!=$('#pack_photo').val().toLowerCase())
+					suppr+=$(this).val();
+					if(index<$('[@name^=fichierasuppr_b]').length-1)
+						suppr+=';';
+			}
+		});
+		$.ajax({
+			 type:"POST",
+			 url:j_basepath+'index.php',
+			 data:"module=pack&action=packBo_traitementVisuels&fl=p&process=suppr&fichier="+suppr,
+			 dataType:"json",
+			 async:false
+		});
+	}
+
+};
+
+jQuery(document).ready(function() {
+	/*$('[@type=checkbox]').click(function(){
+//		alert(this.name);
+		if(this.checked)		
+			$(this).val(1);
+		else
+			$(this).val(0);
+	});*/
+
+	if($('#pack_photo').val()!=""){
+		extension=$('#pack_photo').val().split(['.']);
+		switch(extension[extension.length-1].toLowerCase()){
+			case 'swf':
+				if($('.clearfix').length>1)
+				$('.clearfix').gt(0).hide();
+				break;
+			default:
+				$('.clearfix').each(function(){
+					$(this).css('display','block');
+				});
+				break;
+		}
+		form=document.getElementById('packForm');
+		form.tmt_validator = new tmt_formValidator(form);
+	}
+	$('#champsvisuel').bind("focus",function() {
+													
+		$.ajax({
+			 type:"POST",
+			 url:j_basepath+'index.php',
+			 data:"module=pack&action=packBo_traitementVisuels&fl=p&process=resize&fichier="+$(this).val(),
+			 dataType:"json",
+			 async:false,
+			 success:function(resultat){
+				$('#appercuPhoto').empty();
+				$('#appercuPhoto').html(resultat.visuel);
+				$('#auxvisuel').val(j_basepath+j_pack_resize + 'photos/' +  resultat.image);
+				extension=resultat.image.split(['.']);
+				switch(extension[extension.length-1].toLowerCase()){
+					case 'swf':
+						if($('.clearfix').length>1)
+						$('.clearfix').gt(0).hide();
+						//$('#actualite_url').removeAttr('tmt:required');
+						break;
+					default:
+						$('.clearfix').each(function(){
+							$(this).css('display','block');
+						});
+						break;
+				}				
+
+				//$('#actualite_photo').val(resultat.image);
+				if($('#auxvisuel').val().length>0)
+					$('#pack_photo').val($('#auxvisuel').val());
+
+				input_h=document.createElement('input');
+				input_h.type='hidden';
+				$(input_h).attr({'name':'fichierasuppr_'+$('[@name^=fichierasuppr_]').length,'value':j_basepath + j_pack_resize + 'photos/'  + resultat.image});
+				$('#packForm').append($(input_h));
+				form=document.getElementById('packForm');
+				form.tmt_validator = new tmt_formValidator(form);
+			 }
+		});
+	});
+
+	$('.clearfix').find('.bouton').bind('click', clickAction);
+});
+
+function clickAction(obj){
+	var id = $($(obj).get(0).target).attr('id');
+	$('#champsvisuel').removeClass('invalid');
+	$('#errorMessage').html('');
+
+	if(id == 'photo')
+	{
+		ServerPath = j_basepath + j_pack_medias + 'photos/';
+		champs = 'champsvisuel';
+	}
+	if(id == 'fichier')
+	{
+		ServerPath = j_basepath + j_pack_medias + 'fichiers/';
+		champs = 'champs_fichier';
+	}
+	browser();
+}
+
+function browser()
+{
+//	ServerPath = j_basepath + j_logo_medias;
+
+	url=j_basepath + 'FCKeditor/editor/filemanager/browser/default/browser.html?externe=yes&champs=' + champs + '&ServerPath='+ServerPath+'&CurrentFolder=/&Connector=connectors/php/connector.php';
+
+	var iLeft = (screen.width  - screen.width * 0.7) / 2 ;
+	var iTop  = (screen.height - screen.height * 0.7) / 2 ;
+
+	var sOptions = "toolbar=no,status=no,resizable=yes,dependent=yes" ;
+	sOptions += ",width=" + screen.width * 0.7 ;
+	sOptions += ",height=" + screen.height * 0.7 ;
+	sOptions += ",left=" + iLeft ;
+	sOptions += ",top=" + iTop ;
+
+	window.open( url, "BrowseWindow", sOptions ) ;
+}
+
+function submitForm(form){
+	g_supprvisuel=0;
+	if(tmt_validateForm(form)){
+		if($('#auxvisuel').val().length>0)
+			$('#pack_photo').val($('#auxvisuel').val());
+
+		return true;
+	}else{
+		g_supprvisuel=1;
+		return false;
+	}
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="utilisateur" realname="utilisateur" primarykey="utilisateur_id" />
+    </datasources>
+    <record>
+
+    <property name="utilisateur_id" fieldname="utilisateur_id" datatype="autoincrement"/>
+    <property name="utilisateur_paysId" fieldname="utilisateur_paysId" datatype="int" required="true"/>
+    <property name="utilisateur_profilId" fieldname="utilisateur_profilId" datatype="int" required="true"/>
+    <property name="utilisateur_nom" fieldname="utilisateur_nom" datatype="string" required="true"/>
+    <property name="utilisateur_prenom" fieldname="utilisateur_prenom" datatype="string" required="true"/>
+    <property name="utilisateur_civilite" fieldname="utilisateur_civilite" datatype="int" required="true"/>
+    <property name="utilisateur_dateNaissance" fieldname="utilisateur_dateNaissance" datatype="date" required="true"/>
+    <property name="utilisateur_adresse" fieldname="utilisateur_adresse" datatype="string" required="true"/>
+    <property name="utilisateur_cp" fieldname="utilisateur_cp" datatype="string" required="true"/>
+    <property name="utilisateur_ville" fieldname="utilisateur_ville" datatype="string" required="true"/>
+    <property name="utilisateur_fonction" fieldname="utilisateur_fonction" datatype="string" required="true"/>
+    <property name="utilisateur_societe" fieldname="utilisateur_societe" datatype="string" required="true"/>
+    <property name="utilisateur_telephone" fieldname="utilisateur_telephone" datatype="string" required="true"/>
+    <property name="utilisateur_email" fieldname="utilisateur_email" datatype="string" required="true"/>
+    <property name="utilisateur_login" fieldname="utilisateur_login" datatype="string" required="true"/>
+    <property name="utilisateur_password" fieldname="utilisateur_password" datatype="string"/>	
+    <property name="utilisateur_dateCreation" fieldname="utilisateur_dateCreation" datatype="date" required="true"/>
+    <property name="utilisateur_dateModification" fieldname="utilisateur_dateModification" datatype="date" required="true"/>
+    <property name="utilisateur_statut" fieldname="utilisateur_statut" datatype="int" required="true"/>	
+    <property name="utilisateur_question" fieldname="utilisateur_question" datatype="int" required="true"/>
+    <property name="utilisateur_reponse" fieldname="utilisateur_reponse" datatype="string" required="true"/>
+    <property name="utilisateur_photo" fieldname="utilisateur_photo" datatype="string" required="true"/>
+    <property name="utilisateur_url" fieldname="utilisateur_url" datatype="string" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="rubrique" realname="rubrique" primarykey="rubrique_id" />
+    </datasources>
+    <record>
+
+    <property name="rubrique_id" fieldname="rubrique_id" datatype="autoincrement"/>
+    <property name="rubrique_parentId" fieldname="rubrique_parentId" datatype="int" required="true"/>
+    <property name="rubrique_categorieAnId" fieldname="rubrique_categorieAnId" datatype="int" required="true"/>
+    <property name="rubrique_level" fieldname="rubrique_level" datatype="int" required="true"/>
+    <property name="rubrique_path" fieldname="rubrique_path" datatype="string" required="true"/>
+    <property name="rubrique_libelle" fieldname="rubrique_libelle" datatype="date" required="true"/>
+    <property name="rubrique_code" fieldname="rubrique_code" datatype="string" required="true"/>
+    <property name="rubrique_sortCode" fieldname="rubrique_sortCode" datatype="string" required="true"/>
+	
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

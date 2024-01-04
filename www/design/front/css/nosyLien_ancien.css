@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.registerList {
+	width:635px;
+	padding:15px 0 0 15px;
+}
+
+.registerList li span.titre {
+	line-height:20px;
+	border-bottom:1px dotted #024AC0;
+	font-family:"Trebuchet MS",Arial,Sans-serif;	
+	font-size:14px;
+	font-weight:bold;
+	line-height:24px;
+	padding:0 5px 0 0;
+	text-decoration:none;
+}
+	
+.registerList li span.titre a {
+	text-decoration:none;
+	color:#015cb7;
+}
+
+.registerList li span.titre a:hover {
+	text-decoration:none;
+}
+
+.registerList li ul li span {
+	text-decoration:none;
+	color:#A97E6E;
+}
+.registerList li ul li span.puceBleue ,
+.registerList li ul li span a {
+	color:#0066CC;
+}
+
+.registerList li ul li ul li span.puceVert {
+	padding-left:15px;
+}
+
+.registerList li ul li span.puceVert ,
+.registerList li ul li ul li span a {
+	color:#006E12;
+}
+
+

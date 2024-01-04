@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="forum" realname="forum" primarykey="forum_id" />
+    </datasources>
+    <record>
+
+    <property name="forum_id" fieldname="forum_id" datatype="autoincrement"/>
+    <property name="forum_parentId" fieldname="forum_parentId" datatype="int" required="true"/>
+    <property name="forum_categorieForId" fieldname="forum_categorieForId" datatype="int" required="true"/>
+    <property name="forum_level" fieldname="forum_level" datatype="int" required="true"/>
+    <property name="forum_path" fieldname="forum_path" datatype="string" required="true"/>
+    <property name="forum_libelle" fieldname="forum_libelle" datatype="date" required="true"/>
+    <property name="forum_description" fieldname="forum_description" datatype="string" required="true"/>
+    <property name="forum_sortCode" fieldname="forum_sortCode" datatype="string" required="true"/>
+	
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

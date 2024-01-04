@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="abonnement" realname="abonnement" primarykey="abonnement_id" />
+    </datasources>
+    <record>
+
+    <property name="abonnement_id" fieldname="abonnement_id" datatype="autoincrement"/>
+    <property name="abonnement_utilisateurId" fieldname="abonnement_utilisateurId" datatype="int" required="true"/>
+    <property name="abonnement_forfaitId" fieldname="abonnement_forfaitId" datatype="int" required="true"/>
+    <property name="abonnement_reference" fieldname="abonnement_reference" datatype="string" required="true"/>
+    <property name="abonnement_dateDebut" fieldname="abonnement_dateDebut" datatype="date" required="true"/>
+    <property name="abonnement_dateFin" fieldname="abonnement_dateFin" datatype="date" required="true"/>
+    <property name="abonnement_dateCreation" fieldname="abonnement_dateCreation" datatype="date" required="true"/>
+    <property name="abonnement_credit" fieldname="abonnement_credit" datatype="int" required="true"/>
+    <property name="abonnement_creditPlus" fieldname="abonnement_creditPlus" datatype="int" required="true"/>
+    <property name="abonnement_nbPlus" fieldname="abonnement_nbPlus" datatype="int" required="true"/>
+    <property name="abonnement_statut" fieldname="abonnement_statut" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

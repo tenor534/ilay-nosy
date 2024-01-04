@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="actualite" realname="actualite" primarykey="actualite_id" />
+    </datasources>
+    <record>
+
+    <property name="actualite_id" fieldname="actualite_id" datatype="autoincrement"/>
+    <property name="actualite_categorieActId" fieldname="actualite_categorieActId" datatype="int" required="true"/>
+    <property name="actualite_reference" fieldname="actualite_reference" datatype="string" required="true"/>
+    <property name="actualite_titre" fieldname="actualite_titre" datatype="string" required="true"/>
+    <property name="actualite_resume" fieldname="actualite_resume" datatype="string" required="true"/>
+    <property name="actualite_texte" fieldname="actualite_texte" datatype="string" required="true"/>
+    <property name="actualite_photo" fieldname="actualite_photo" datatype="string" required="true"/>
+    <property name="actualite_dateCreation" fieldname="actualite_dateCreation" datatype="date" required="true"/>
+    <property name="actualite_dateModification" fieldname="actualite_dateModification" datatype="date" required="true"/>
+    <property name="actualite_datePublication" fieldname="actualite_datePublication" datatype="date" required="true"/>
+    <property name="actualite_source" fieldname="actualite_source" datatype="string" required="true"/>
+    <property name="actualite_vue" fieldname="actualite_vue" datatype="int" required="true"/>
+    <property name="actualite_fichier" fieldname="actualite_fichier" datatype="string" required="true"/>
+    <property name="actualite_visite" fieldname="actualite_visite" datatype="int" required="true"/>
+    <property name="actualite_publier" fieldname="actualite_publier" datatype="int" required="true"/>
+    <property name="actualite_publierHome" fieldname="actualite_publierHome" datatype="int" required="true"/>
+    <property name="actualite_laUne" fieldname="actualite_laUne" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

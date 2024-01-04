@@ -1,0 +1,458 @@
+/************************************************
+/*	DWORD Consulting Style Sheet
+/*	Version:  15 Août 2009
+************************************************/
+
+body {
+  background:#fff;
+  margin:0;
+  padding:0px 5px 15px 20px;
+  font:small/1.6em Verdana,Sans-serif;
+  text-align:center;
+  color:#333;
+  }
+
+/* Page
+----------------------------------------------- */
+#page {
+  border:1px solid #87b3d0;
+  background:#DAE9F3 none repeat scroll 0 0;
+  margin-top:10px;
+  width:920px;
+  text-align:left;  
+  }
+
+/* Header
+----------------------------------------------- */
+#header {
+  width:920px;
+  /*padding-bottom:10px;*/
+  }
+#header a {
+  border-width:0;
+  }
+
+#header_a {
+  width:90px;
+  height:88px;
+  margin-top:-88px;
+  margin-left:180px;
+  background:url(../img/commun/logo_aile1.jpg);  
+  }
+#header_b {
+  width:650px;
+  height:88px;
+  margin-top:-88px;
+  margin-left:270px;
+  background-color:#FFFFFF;  
+  }
+
+#logo {
+  float:none;		
+  display:block;
+  border:0px;
+  }
+
+/* Top Menu
+----------------------------------------------- */
+#xnav{
+	float:right;
+	font-family:tahoma,sans-serif;
+	font-size:82%;
+	list-style-type:none;
+	/*margin:-89px -11px 0 4px;*/
+	margin:0px -11px 0 4px;
+	padding:0;
+	width:390px;
+}
+
+#xnav a{
+	background-color:transparent;
+	color:#fff;
+	text-decoration:none;	
+}
+
+#xnav li{
+	float: left;
+	margin:5px 4px 0 -1px;
+	list-style:none;
+	width:90px;
+	border: 1px solid #004E82;	
+	/*background-color:#257097;*/
+	background:url(../img/nav/nav_top_bg.gif) repeat-x left;
+	
+}
+
+#xnav li.empty{display:none}
+
+#xnav li.selected{
+	/*background-position:0 50%;*/
+	/*background-color:#08ae54;*/
+	border-color:#015d2b;
+	background:url(../img/nav/nav_top_bg_on.gif) repeat-x left;
+}
+
+/* Search Web
+----------------------------------------------- */
+#search{
+	float:right;
+	font-family:tahoma,sans-serif;
+	font-size:82%;
+	list-style-type:none;
+	margin:30px 0 0 0;	
+	width:290px;
+	background-color:#fff;
+}
+
+#search label{
+	float:left;
+}
+
+
+/* TextBox */
+#critere {
+	/*border-right:medium none;*/
+}
+#critere, #valid {
+	border:1px solid #2A5997;
+}
+
+#critere {
+	background:#FFFFFF url(../img/nav/search_text_shadow.gif) repeat-y scroll 100% 0;
+	display:block;
+	float:left;
+	padding:3px 0 3px 0;
+	width:146px;
+}
+input, select, textarea {
+	font-family:tahoma,sans-serif;
+	font-size:100%;	
+}
+
+#valid {
+	/*margin:0 0 0 -2px;*/
+}
+
+#valid {
+	background:#FFFFFF url(../img/nav/search_bg.gif) repeat-x scroll 0 45%;
+	display:block;
+	color:#07519A;
+	float:left;
+	padding:2px;
+}
+
+
+/* Menu principal
+----------------------------------------------- */
+div#nav {
+	float:left;
+	width:920px;
+	height:30px;
+	/*z-index:10;*/
+	/*background:#dae9f3;*/
+	/*background-color:transparent;*/
+	/*padding:5px 0px 8px 0px;*/
+	/*padding:0px 0px 0px 0px;*/
+}
+
+#nav ul { /* all lists */	
+	padding:0px 0px 0px 0px;
+	list-style: none;
+	margin-left:5px;
+	margin-top:0px;
+}
+
+/* classe des liens de la barre des menus */
+#nav a {
+	font:bold 11px Tahoma;	
+	color: #004e82;
+	display: block;
+	/*background-color: #e9f2f8;*/
+	/*background:url(../img/nav/nav_principal_bg.jpg)repeat-x bottom;*/
+	background:transparent url(../img/nav/nav_principal_bg.jpg) repeat-x scroll bottom;	
+	text-decoration: none;
+	text-align:center;
+	padding:8px 0px 0px 0px;
+	height:20px;
+}
+
+#nav a:hover, #nav ul li.selected a:hover {
+	color: #257097;
+	background:transparent url(../img/nav/nav_principal_bg_hover.jpg) repeat-x scroll top;
+	border-color:#2F0000;		
+}
+
+#nav li { /* all list items */
+	float: left;
+	margin-left:-1px;
+	list-style:none;
+	width:113px;
+	padding:0px;
+	border: 1px solid #87b3d0;	
+}
+
+#nav ul li.selected a{
+	color: #2f3133;
+	background:transparent url(../img/nav/nav_gauche_bg.jpg) repeat-x scroll top;	
+	border-color:#004E82;
+}
+
+/* Page Header (ph)
+----------------------------------------------- */
+#ph {
+  float:left;
+  width:920px;
+  background-color:#DAE9F3;
+  margin: 6px 0 10px 0;
+  text-align:center;
+  }
+#location-image {
+  display:inline;
+  float:right;
+  width:690px;
+  height:120px;
+  margin:3px 0 0 0;
+  letter-spacing:0.05em;  
+  background:url(../img/baniere/baniere3.jpg) no-repeat;
+}
+#location-image em{
+  display:block;
+  font-family:Tahoma;
+  font-style:normal;
+  font-weight:bolder;
+  font-size:182%;
+  padding:40px 10px 2px 20px;
+  color:#003955;
+}
+
+#location-general{
+  background:url(../img/nav/location_bg.jpg) repeat-x;
+  float:left;
+  width:220px;
+  height:120px;
+
+  margin:3px 0 0 0;
+
+  font-size:85%;
+  font-family:Tahoma;
+  line-height:1.4em;
+  color:#BAD2D2;
+  background-color:#003399;
+  }
+#location-general em {
+  display:block;
+  font-style:normal;
+  padding:30px 10px 2px 20px;
+  color:#003955;
+  }
+#location-general a {
+  background:url(../img/tri_down_bad2d2.gif) no-repeat 10px .6em;
+  display:block;
+  padding:.2em 10px 0 20px;
+  border-width:0;
+  /*font:bold 100%/1.4em "Trebuchet MS",Verdana,Sans-serif;*/
+  font:bold 100%/1.4em Tahoma;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#003955;
+  }
+
+/* Structure : Content
+----------------------------------------------- */
+#content {
+  float:none;
+  width:920px;
+  }
+
+#content-main {
+  float:right;
+  width:690px;
+  font-size:85%;
+  /*font-family:Tahoma;*/
+  font-family:"Trebuchet MS",Arial,Sans-serif;	
+  line-height:1.6em;
+  background-color:#FFFFFF;
+  }
+#content-side {
+  background:url(../img/shadow_CEE6E6.gif) repeat-x;
+  float:left;
+  width:220px;
+  padding-bottom:10px;
+  text-align:center;
+  }
+#content-side .short {
+  width:160px;
+  padding:0 20px 10px;
+  font-size:85%;
+  line-height:1.8em;
+  background-color:#999999; 
+}
+#content-side .image {
+  margin-right:-10px;
+}
+#content-side p {
+  padding-left:6px !important;
+  padding-right:6px !important;
+}
+
+.inset-left, .inset-right {
+  background:#fff;
+  float:left;
+  width:195px;
+  margin:1.5em 10px 1.5em 0;
+  }
+.inset-right {
+  float:right;
+  margin:1.5em 0 1.5em 10px;
+  }
+.inset-left {
+  border-right: 1px dotted #ccc;
+  margin-top:0;
+  padding:0 15px 0 0;
+  width:180px;
+}
+.inset-left .thumbnail {
+  float: left;
+  padding: 5px 0 0 0;
+  margin-bottom: -5px;
+}
+.inset-left .video_thumbnail {
+  margin: 10px auto 0;
+}
+.inset-left p {
+  padding-right: 5px;
+}
+.subcolumn-left, .subcolumn-right {
+  float:left;
+  width:493px;
+  margin:0 -10px 0 0;
+  }
+.subcolumn-right {
+  float:right;
+  margin:0 0 0 -10px;
+  }
+
+/* Side Nav : Menu de gauche
+----------------------------------------------- */
+ul.sidenav, .sidenav ul {
+  margin:0;
+  padding:0 0 10px;
+  list-style:none;
+  font:bold 80%/1.4em "Trebuchet MS",Verdana,Sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  }
+.sidenav ul {
+  font-size:100%;
+  }
+.sidenav li {
+  /*background:#33b1d5 url(../img/shadow_side1.gif) repeat-x 0 0;*/
+  background:url(../img/nav/nav_gauche_bg.jpg) repeat-x left top;
+  margin:0;
+  }
+.sidenav ul li {
+  background:#66c4df;
+  }
+.sidenav ul ul li {
+  background:#99d8ea;
+  }
+#lastnode li {
+  background:none;
+  }
+.sidenav ul ul ul li, .sidenav ul #lastnode li {
+  background:#c9dfea;
+  }
+.sidenav a, .sidenav a:visited, .sidenav strong {
+  /*background:url(../img/tri_down_fff.gif) no-repeat 10px 1.1em;*/
+  display:block;
+  padding:12px 20px 10px 0;
+  border-width:0;
+  text-decoration:none;
+  color:#014e8f;
+  font-weight: bold;
+  font-family:Tahoma;
+  }
+ul#lastnode {
+  background:#c9dfea url(../img/shadow_CEE6E6.gif) repeat-x 0 0;
+  padding-top:5px;
+  font:85%/1.5em Verdana,Sans-serif;
+  text-transform:none;
+  letter-spacing:0;
+  text-align:left;
+  }
+.sidenav ul#lastnode {
+  background-image:none;
+  padding-top:0;
+  font-size:106%;
+  line-height:1.5em;
+  }
+ul#lastnode li {
+  font-size:100%;
+  line-height:1.5em;
+  }
+#lastnode a, #lastnode a:visited, #lastnode strong {
+  background-image:none;
+  padding:3px 20px 3px 20px;
+  padding-bottom:3px;
+  color:#36a;
+  font-weight: normal;
+  }
+* html #lastnode a, * html #lastnode strong {
+  height:1%;
+  }
+#lastnode strong {
+  color:#000;
+  background-image:url(../img/tri_right_047.gif);
+  background-position:10px .8em;
+  text-decoration:none;
+  }
+/*.sidenav a:hover {
+  background-color:#009DCA;
+  color:#fff;
+  }*/
+#lastnode a:hover {
+  background:#fff url(../img/tri_right_fff.gif) no-repeat 10px .8em;
+  }
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  background:url(../img/nav/nav_gauche_bg.jpg) repeat-x left top;
+  clear:both;
+  width:920px;
+  border-top:10px solid #fff;
+  font-size:85%;
+  font-family:Tahoma;
+  text-align:center;
+  line-height:1.6em;
+  /*color:#dee;*/
+  color:#2F2C1C;  
+  }
+html>body #footer {
+  /*background-image:url(../img/nav/nav_gauche_bg.jpg);*/
+  }
+#footer div {
+  /*background:url(../img/corners_fullwidth_top.gif) no-repeat;*/
+  padding:15px 20px 10px 0;
+  }
+html>body #footer div {
+ /* background-image:url(../img/nav/nav_gauche_bg.jpg);*/
+  }
+#footer p {
+  margin:0;
+  padding:0;
+  }
+#footer a {
+  color:#014e8f;  
+  border-color:#fff;
+  text-decoration:none;
+  }
+#footer a:hover {
+  color:#9B0000;  
+}
+
+#footer hr {
+  display:none;
+}
+
+

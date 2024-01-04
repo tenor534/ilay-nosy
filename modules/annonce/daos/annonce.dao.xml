@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="annonce" realname="annonce" primarykey="annonce_id" />
+    </datasources>
+    <record>
+
+    <property name="annonce_id" fieldname="annonce_id" datatype="autoincrement"/>
+    <property name="annonce_abonnementId" fieldname="annonce_abonnementId" datatype="int" required="true"/>
+    <property name="annonce_rubriqueId" fieldname="annonce_rubriqueId" datatype="int" required="true"/>
+    <property name="annonce_localiteId" fieldname="annonce_localiteId" datatype="int" required="true"/>
+    <property name="annonce_reference" fieldname="annonce_reference" datatype="string" required="true"/>
+    <property name="annonce_titre" fieldname="annonce_titre" datatype="string" required="true"/>
+    <property name="annonce_resume" fieldname="annonce_resume" datatype="string" required="true"/>
+    <property name="annonce_description" fieldname="annonce_description" datatype="string" required="true"/>
+    <property name="annonce_offreId" fieldname="annonce_offreId" datatype="int" required="true"/>
+    <property name="annonce_prix" fieldname="annonce_prix" datatype="float" required="true"/>
+    <property name="annonce_prixInfo" fieldname="annonce_prixInfo" datatype="string" required="true"/>
+    <property name="annonce_annee" fieldname="annonce_annee" datatype="int" required="true"/>
+    <property name="annonce_etat" fieldname="annonce_etat" datatype="int" required="true"/>
+    <property name="annonce_contactNom" fieldname="annonce_contactNom" datatype="string" required="true"/>
+    <property name="annonce_contactPrenom" fieldname="annonce_contactPrenom" datatype="string" required="true"/>
+    <property name="annonce_contactEmail" fieldname="annonce_contactEmail" datatype="string" required="true"/>
+    <property name="annonce_contactAdresse" fieldname="annonce_contactAdresse" datatype="string" required="true"/>
+    <property name="annonce_contactTelephone" fieldname="annonce_contactTelephone" datatype="string" required="true"/>
+    <property name="annonce_contactPeriodeAppel" fieldname="annonce_contactPeriodeAppel" datatype="int" required="true"/>
+    <property name="annonce_dateCreation" fieldname="annonce_dateCreation" datatype="date" required="true"/>
+    <property name="annonce_dateModification" fieldname="annonce_dateModification" datatype="date" required="true"/>
+    <property name="annonce_dateDebut" fieldname="annonce_dateDebut" datatype="date" required="true"/>
+    <property name="annonce_dateFin" fieldname="annonce_dateFin" datatype="date" required="true"/>
+    <property name="annonce_origine" fieldname="annonce_origine" datatype="string" required="true"/>
+    <property name="annonce_action" fieldname="annonce_action" datatype="int" required="true"/>
+    <property name="annonce_visite" fieldname="annonce_visite" datatype="int" required="true"/>
+    <property name="annonce_dateVisite" fieldname="annonce_dateVisite" datatype="datetime" required="true"/>
+    <property name="annonce_publier" fieldname="annonce_publier" datatype="int" required="true"/>
+    <property name="annonce_publierHome" fieldname="annonce_publierHome" datatype="int" required="true"/>
+    <property name="annonce_laUne" fieldname="annonce_laUne" datatype="int" required="true"/>
+    <property name="annonce_photo" fieldname="annonce_photo" datatype="string" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

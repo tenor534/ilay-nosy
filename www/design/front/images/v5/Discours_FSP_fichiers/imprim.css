@@ -1,0 +1,26 @@
+body { background-color: #fff; }
+#haut,#gauche,#menu_principal,#droite,#pied,#hierarchie,.outils { display:none; }
+
+#centre,#page,#conteneur,#texte {
+  display:block!important;
+  border:0px!important; 
+  width:100%!important; 
+  padding:0px!important; 
+  margin:0px!important; 
+  position:relative!important;
+  float: none!important;
+  clear: both!important;
+  overflow:visible!important;;
+  background-color: #fff;
+}
+
+
+body,html,#conteneur { 
+ page-break-inside:auto;
+ width:100%;
+ height:100%; 
+ overflow:visible;
+ position:relative!important;
+}
+
+ 

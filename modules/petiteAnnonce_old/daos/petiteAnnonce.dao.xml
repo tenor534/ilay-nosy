@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="petiteAnnonce" realname="petiteAnnonce" primarykey="petiteAnnonce_id" />
+    </datasources>
+    <record>
+
+    <property name="petiteAnnonce_id" fieldname="petiteAnnonce_id" datatype="autoincrement"/>
+    <property name="petiteAnnonce_categorieAnId" fieldname="petiteAnnonce_categorieAnId" datatype="int" required="true"/>
+    <property name="petiteAnnonce_reference" fieldname="petiteAnnonce_reference" datatype="string" required="true"/>
+    <property name="petiteAnnonce_description" fieldname="petiteAnnonce_description" datatype="string" required="true"/>
+    <property name="petiteAnnonce_prix" fieldname="petiteAnnonce_prix" datatype="float" required="true"/>
+    <property name="petiteAnnonce_prixInfo" fieldname="petiteAnnonce_prixInfo" datatype="string" required="true"/>
+    <property name="petiteAnnonce_contact" fieldname="petiteAnnonce_contact" datatype="string" required="true"/>
+    <property name="petiteAnnonce_dateCreation" fieldname="petiteAnnonce_dateCreation" datatype="date" required="true"/>
+    <property name="petiteAnnonce_dateModification" fieldname="petiteAnnonce_dateModification" datatype="date" required="true"/>
+    <property name="petiteAnnonce_affichage" fieldname="petiteAnnonce_affichage" datatype="int" required="true"/>
+    <property name="petiteAnnonce_publier" fieldname="petiteAnnonce_publier" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

@@ -1,0 +1,330 @@
+/************************************************
+/*	DWORD Consulting Style Sheet
+/*	Version:  15 Août 2009
+************************************************/
+
+p.lead {
+	margin-top:1em;
+	margin:10px 0 0.75em;
+	line-height:1.8em;
+	padding:0 20px;
+}
+
+.leadin {
+	color:#014E8F;
+  	font:bold 100% "Trebuchet MS",Arial,Sans-serif;
+	/*font:bold 100% Tahoma;*/
+	font-size:100%;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	letter-spacing:0.2em;
+	line-height:normal;
+	text-transform:uppercase;
+}
+
+.inset-left {
+	border-right:1px dotted #CCCCCC;
+	margin-top:0;
+	padding:0 15px 0 0;
+	width:180px;
+}
+
+.inset-left, .inset-right {
+	background:#FFFFFF none repeat scroll 0 0;
+	float:left;
+	margin:1.5em 10px 1.5em 0;
+	width:195px;
+}
+
+.inset-left h2, .inset-right h2, .news-story .inset-left h2, .news-story .inset-right h2 {
+	/*color:#999999;*/
+	color:#696934;
+	font-family:"Trebuchet MS",Arial,Sans-serif;	
+	font-size:92%;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	letter-spacing:0.1em;
+	line-height:1.4em;
+	text-transform:uppercase;
+	text-align:left;
+	padding:0 0 0 20px;
+}
+
+.inset-left p {
+	padding-right:5px;
+}
+
+a {
+	border-bottom:1px dotted #024AC0;
+	color:#0141A2;
+	text-decoration:none;
+}
+
+p a {
+	text-align:left;
+}
+p b {
+	font-weight:bold;
+	text-align:left;
+	color:#0141A2;	
+}
+
+.inset-left .thumbnail {
+	float:left;
+	margin-bottom:-5px;
+	padding:5px 0 0;
+}
+.inset-left a img {
+	border:0 none;
+	float:left;
+}
+.photo a, a.noline, .thumbnail a, .image a, a img {
+	border-width:0;
+}	
+
+p {
+	margin:0 0 0.75em;
+	line-height:1.8em;
+	padding:0 20px;
+}
+
+h3, h3 a, h3 a:visited {
+	/*color:#772222;*/
+	color:#004F00;
+}
+h3 {
+	border-bottom:1px dotted #CCCCCC;
+	font-family:Georgia,Serif;
+	font-size:125%;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.6em;
+	margin:1.25em 10px 1em;
+	padding:0 10px 0 0;
+}
+
+/*
+Home
+---------------------------------------------------------------*/
+.video-reset {
+  clear:both;
+ /* height:1px;
+  font-size:1px;
+  line-height:1px;
+  margin:5px 10px 5px 20px;
+  background:url(../img/e9_pix.gif) left bottom repeat-x;*/
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:.75em 0 .25em;
+  padding:0 20px;
+  font:155%/1.4em Georgia,Serif;
+  }
+h2 {
+  color:#000;
+  }
+h2 a, h2 a:visited {
+  color:#0043a2;
+  }
+h2 em {
+  font-style:normal;
+  color:#722;
+  }
+h2 em:before {
+  content:"| ";
+  color:#999;
+  }
+#content-side h2, #content-side h3, .home #ph-text h2 {
+  padding:0;
+  }
+.inset-left h2, .inset-right h2, .news-story .inset-left h2, .news-story .inset-right h2 {
+  font:bold 92%/1.4em "Trebuchet MS",Arial,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#999;
+  }
+#content-side h2, .trio h2, .home #ph-text h2 {
+  margin:1.75em 0 1em;
+  font:bold 92%/1.4em "Trebuchet MS",Arial,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#content-side h2.first {
+  margin:0.20em 0 1.50em;
+}
+#content-side h2, .trio h2, #content h2 a, .home #ph-text h2 {
+  color:#036;
+  }
+#content-side h2 {
+  padding:4px 6px;
+  color:#fff;
+  background:#80aec2;
+  }
+.subcolumn-left h2 {
+  padding-right:10px;
+  }
+.subcolumn-right h2 {
+  padding-left:10px;
+  }
+.trio h2 {
+  padding:0;
+  margin:0;
+  padding:0 0 5px 0;
+  }
+#content .trio h2 a {
+  text-align:center;	
+  color:#004080;
+  display:block;
+  padding:4px 0 4px 11px;
+  }
+.part1 h2 {
+  background:#fff url(../img/bg_h2_part1.gif) 0px 27px no-repeat;
+  }
+.part1 h2 a, .part1 h2 a:hover, .part1 h2 a:visited {
+  /*border:1px solid #448899;*/
+  border:1px solid #277198;  
+  border-top-width:4px;
+  }
+.part2 h2 {
+  background:#fff url(../img/bg_h2_part1.gif) 0px 27px no-repeat;
+  
+  }
+.part2 h2 a, .part2 h2 a:hover, .part2 h2 a:visited {
+  /*border:1px solid #994466;*/
+  border:1px solid #277198;  
+  border-top-width:4px;
+  }
+.part3 h2 {
+  background:#fff url(../img/bg_h2_part1.gif) 0px 27px no-repeat;
+  }
+.part3 h2 a, .part3 h2 a:hover, .part3 h2 a:visited {
+  /*border:1px solid #998844;*/
+  border:1px solid #277198;  
+  border-top-width:4px;
+  }
+h3 {
+  margin:1.25em 10px 1em;
+  padding:0 10px .5em;
+  border-bottom:1px dotted #ccc;
+  font:125%/1.6em Georgia,Serif;
+  }
+h3, h3 a, h3 a:visited {
+  color:#722;
+  }
+h3.important {
+  margin:0 10px .5em;
+  font:200%/1.2em Georgia,Serif;
+  color:#000;
+  }
+.inset-left h3, .inset-right h3 {
+  font:105%/1.4em Georgia,Serif;
+  border-bottom: none;
+  margin: 0.5em 10px;
+  padding:0 10px;
+}
+h4 {
+  margin:1.5em 0 .5em;
+  padding:0 20px;
+  font:bold 100%/1.8em Verdana,Sans-serif;
+  color:#377;
+  }
+
+/* Les trois colonnes*/
+.trio {
+  float:left;
+  width:690px;
+  margin-top:.5em;
+  background:url(../img/bg_trio.gif) left top repeat-y;
+  /*border:1px solid #000000;*/
+  }
+.trio:after { 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.trio { 
+  display:inline-block; 
+}
+.trio .ahead:after { 
+  content:"."; 
+  display:block; 
+  height:0; 
+  clear:both; 
+  visibility:hidden; 
+}
+.trio .ahead { 
+  display:inline-block;   
+  /*border:1px solid #000000;*/
+}
+.trio .part, .trio .part1, .trio .part2, .trio .part3 { 
+  background:none;
+  float:left;
+  width:214px;
+  margin:0;
+  padding:0 0 0 15px;
+}
+.trio .image {
+  margin:0 0 5px;
+  padding:5px 10px 0 0;
+  float:left;
+}
+p.closer {
+  background:#E6E4DF url(../img/icon_arrow.gif) no-repeat 10px 50%;
+  clear:both;
+  line-height:1.8em;
+  margin:1em 10px 1.75em;
+  padding:5px 5px 5px 25px;
+  }
+.trio ul {
+  margin:.25em 0 0;
+  }
+html>body .trio ul {
+  margin-bottom:10px;
+  }
+.trio li, ul.files li {
+  background-image:none;
+  float:none;
+  margin:0;
+  padding:0 0 .25em;
+  line-height:1.8em;
+  }
+#content-side ul.files {
+  margin:0;
+  padding:0;
+  padding-bottom:1em;
+  }
+.trio p.logo {
+  margin-bottom:.5em;
+  padding:0 10px;
+  }
+.short p.logo {
+  line-height:30px;
+  height:30px;
+  }
+.med p.logo {
+  line-height:50px;
+  height:50px;
+  }
+.tall p.logo {
+  line-height:80px;
+  height:80px;
+  }
+.trio p.logo img {
+  vertical-align:bottom;
+  }
+p.logo a {
+  border-bottom-width:0;
+  }

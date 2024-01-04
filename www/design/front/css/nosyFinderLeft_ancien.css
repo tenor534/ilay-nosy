@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+#finder
+h4{
+	font:bold 12px "Helvetica Neue", Arial, sans-serif;
+	padding:0
+}
+#finder
+h4.categoryHeader{
+	padding-left:10px
+}

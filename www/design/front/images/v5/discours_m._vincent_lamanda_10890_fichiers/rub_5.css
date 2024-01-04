@@ -1,0 +1,14 @@
+/** Définitions des paarticularités liées à la rubrique **/
+#entete {
+	background-color: #BB84B5;
+}
+.colg, #acces, #part {
+	background-color: #CFA9CB;
+}
+.contPop h3, #centre h3, #centreSimple h3{
+	color:#BB84B5;
+}
+#part .voir li{
+	list-style-image: url(../_img/deco/puce_cold_actint.gif);
+}
+

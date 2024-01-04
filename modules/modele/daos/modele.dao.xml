@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="modele" realname="modele" primarykey="modele_id" />
+    </datasources>
+    <record>
+
+    <property name="modele_id" fieldname="modele_id" datatype="autoincrement"/>
+    <property name="modele_marqueId" fieldname="modele_marqueId" datatype="int" required="true"/>
+    <property name="modele_libelle" fieldname="modele_libelle" datatype="string" required="true"/>
+    <property name="modele_code" fieldname="modele_code" datatype="string" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

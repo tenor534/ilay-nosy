@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* class pour les input */
+.user_input1,
+.user_input2,
+.user_input3,
+.user_input4,
+.user_input5,
+.user_input_select1 {
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	color:#184059;
+	height:18px;
+	border:1px solid #abadb3;
+	background-color:#f1f1f1;
+	margin:0 0 5px 0;
+}
+
+.user_file {
+	background-color:#F1F1F1;
+	color:#184059;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	/*margin:0 0 5px;*/
+}
+
+
+.user_input_select {
+	height:20px;
+}
+
+/*
+#user_nom, 
+#user_prenom,
+#user_question,
+#user_reponse
+*/
+.user_input1 {
+	width:250px;
+}
+
+/*
+#user_email, 
+#user_password,
+#user_password2,
+#user_emailAlter 
+*/
+.user_input2 {
+	width:217px;
+}
+
+/*
+#user_sexe,
+#user_datenaissance,
+#user_code
+*/ 
+.user_input3 {
+	width:100px;
+}
+
+/*#user_pays*/
+.user_input4 {
+	width:175px;
+}
+
+/*#user_cp*/
+.user_input5 {
+	width:50px;
+}
+
+/*select*/
+.input_middle {
+	vertical-align:middle;
+}
+/*select*/
+.input_top {
+	vertical-align:top;
+}
+
+.user_input_select1 {
+	height:100px;
+	width:404px;
+}
+
+/*--------------Boutons valider , Annuler ------------------------*/
+.formButton_modifier,
+.formButton_detail,
+.formButton_abrege,
+.formButton_photo,
+.formButton_valid,
+.formButton_annuler,
+.formButton_login,
+.formButton_register,
+.formButton_accept {
+	margin:5px 0 0 0;
+}
+
+.formButton_abrege,
+.formButton_photo,
+.formButton_annuler {
+	margin-left:5px;
+}
+
+.formButton_valid,
+.formButton_annuler {
+	display:block;
+	float:left;
+	height:21px;
+	text-indent:-9000px;
+	width:64px;
+}
+.formButton_modifier,
+.formButton_detail,
+.formButton_abrege,
+.formButton_photo,
+.formButton_login,
+.formButton_register,
+.formButton_accept {
+	display:block;
+	float:left;
+	height:21px;
+	text-indent:-9000px;
+	width:74px;
+}

@@ -1,0 +1,35 @@
+/** Navigation par onglets **/
+.menuOngl, .menuOnglOn{
+	margin:0px 0px 0px 0px;
+	padding:5px 7px 5px 7px;
+	font-size:0.7em;
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+}
+.menuOngl{
+	background-color:#CBB3B1;
+}
+.menuOnglOn{
+	background-color:#DBCAC8;
+	font-weight:bold;
+}
+.menuOngl a, .menuOnglOn a{
+	color:#000000;
+	text-decoration:none;
+}
+.menuOngl a:hover, .menuOnglOn a:hover{
+	color:#000000;
+	text-decoration:underline;
+}
+.menuOnglOn a, .menuOnglOn a:hover{
+	font-weight:normal;
+}
+/**************************/
+.onglet{
+	background-color:#CBB3B1;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	border-top:15px solid #FFFFFF;
+	border-bottom:15px solid #FFFFFF;
+}

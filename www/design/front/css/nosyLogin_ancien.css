@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+.loginList {
+	color:#000;
+	display:inline-block;
+	float:left;
+	margin:5px 0 10px 0;
+}
+.singleColumnBig ul.loginList li .puce {
+	clear:both;
+	font-weight:bold;
+	/*color:#CC0033;*/
+	float:left;
+	margin-right:8px;
+	width:7px;
+}
+.singleColumnBig ul.loginList li .titre {
+	display:block;
+	float:left;
+	padding-bottom:8px;
+	width:452px;
+}
+
+#loginCreation{
+	left:41px;
+	margin-top:40px;
+}
+#loginForm{
+	background:#f6fcfc;
+	border-bottom:5px solid #d8f2fc;
+}
+
+
+.loginContent{
+	padding-top:5px;
+	width:429px;
+	margin:0 0 0 10px;
+}
+#loginForm p{
+	margin:0 0 10px 0;
+}
+
+/*#loginForm .loginContent #user_email, 
+#loginForm .loginContent #user_password {
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-weight:normal;
+	font-size:12px;
+	color:#184059;
+	height:18px;
+	border:0px;
+	background-color:#DDDBD5;
+	margin:0 0 5px 0;
+	width:217px;
+}
+
+.formButton_singIn, .formButton_register{
+	margin:0 0 16px 5px;
+}
+
+#loginForm a.formButton_singIn {
+	background:transparent url(../images/v5/btn_sign_in.gif) no-repeat scroll 0 0;
+	display:block;
+	float:none;
+	height:33px;
+	text-indent:-9000px;
+	width:101px;
+}
+#loginForm a.formButton_singIn:hover {
+	background:transparent url(../images/v5/btn_sign_in.gif) no-repeat scroll 0 -34px;
+}
+
+#loginForm a.formButton_register {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 0;
+	display:block;
+	float:none;
+	height:33px;
+	text-indent:-9000px;
+	width:101px;
+}
+#loginForm a.formButton_register:hover {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 -33px;
+}
+#loginForm a.formButton_register:active {
+	background:transparent url(../images/v5/btn_register.gif) no-repeat scroll 0 -66px;
+}
+*/
+
+
+#loginForm div.articleSeparator {
+	border-bottom:5px solid #d8f2fc;
+	margin-bottom:5px;
+}
+
+
+#loginForm .loginTitre {
+	font-family:Georgia,Serif;
+	font-weight:normal;
+	font-size:100%;
+	color:#184059;
+	padding:2px 0 0 0;
+	margin-bottom:10px;
+}
+

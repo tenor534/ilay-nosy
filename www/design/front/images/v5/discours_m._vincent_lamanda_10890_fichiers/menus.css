@@ -1,0 +1,564 @@
+/**Definition generale du menu**/
+#menu{
+	text-align:left;
+}
+#menu ul {
+	padding: 0;
+	margin:0;
+}
+#menu li {
+	list-style-type: none;
+	text-align:left;
+	font-size:0.7em;
+	font-weight:bold;
+	color:#000000;
+	text-align:left;
+	margin:0px;
+	width:170px;	/* 150 */
+	padding-left:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #ede7e3;
+	}
+#menu li ul li {border-bottom:none;}
+
+/**Differents cas possibles**/
+/**Rub 1**/
+#menu li.rub1{
+	border-left:10px solid #966b64;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub1b{
+	border-left:10px solid #976B64;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+  	list-style: none;
+	background-color:#b59691;
+	}
+/**Sous-rub1**/
+#menu li.rub1b ul{
+	padding: 0;
+	margin:0;
+	}
+#menu li.rub1b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+	list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+	}
+#menu li.rub1b li a{
+	color:#000000;
+	text-decoration:none;
+	}
+#menu li.rub1b li a:hover{
+	text-decoration:underline;
+	}
+#menu li.rub1b li a:hover, #menu li.rub1b li.rubOn {
+	color:#CCB6B3;
+	}
+#menu li.rub1b li a, #menu li.rub1b li a:hover {
+	font-size:1.4em;
+	}
+#menu li.rub1b li.rubOn{
+	font-size:1em;
+	}
+/**liens dans rub1**/
+#menu li.rub1 a{
+	color:#000000;
+}
+#menu li.rub1b a{
+	color:#333333;
+}
+#menu li.rub1 a, #menu li.rub1b a{
+	text-decoration:none;
+}
+#menu li.rub1 a:hover, #menu li.rub1b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 2**/
+#menu li.rub2{
+	border-left:10px solid #ffee95; //#FFF460;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub2b{
+	border-left:10px solid #ffee95; //#FFF460;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#fff3b5;
+	}
+/**Sous-Rub2**/
+#menu li.rub2b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub2b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub2b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub2b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub2b li a:hover, #menu li.rub2b li.rubOn {
+	color:#DEAF5F;
+}
+#menu li.rub2b li a, #menu li.rub2b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub2b li.rubOn{
+	font-size:1em;
+}
+/**liens dans Rub2**/
+#menu li.rub2 a{
+	color:#000000;
+}
+#menu li.rub2b a{
+	color:#333333;
+}
+#menu li.rub2 a, #menu li.rub2b a{
+	text-decoration:none;
+}
+#menu li.rub2 a:hover, #menu li.rub2b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 3**/
+#menu li.rub3{
+	border-left:10px solid #ffdb8c; /* #FFF460; */
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub3b{
+	border-left:10px solid #ffdb8c; /* #FFF460; */
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#fee6ae;
+	}
+/**Sous-Rub3**/
+#menu li.rub3b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub3b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub3b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub3b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub3b li a:hover, #menu li.rub3b li.rubOn {
+	color:#DEAF5F;
+}
+#menu li.rub3b li a, #menu li.rub3b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub3b li.rubOn{
+	font-size:1em;
+}
+/**liens dans Rub3**/
+#menu li.rub3 a{
+	color:#000000;
+}
+#menu li.rub3b a{
+	color:#333333;
+}
+#menu li.rub3 a, #menu li.rub3b a{
+	text-decoration:none;
+}
+#menu li.rub3 a:hover, #menu li.rub3b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 4**/
+#menu li.rub4{
+	border-left:10px solid #f7af58; //#F7AE58;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub4b{
+	border-left:10px solid #f7af58; //#F7AE58;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#f9c78a;
+	}
+/**Sous-rub4**/
+#menu li.rub4b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub4b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub4b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub4b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub4b li a:hover, #menu li.rub4b li.rubOn {
+	color:#FACE9A;
+}
+#menu li.rub4b li a, #menu li.rub4b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub4b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub4**/
+#menu li.rub4 a{
+	color:#000000;
+}
+#menu li.rub4b a{
+	color:#343333;
+}
+#menu li.rub4 a, #menu li.rub4b a{
+	text-decoration:none;
+}
+#menu li.rub4 a:hover, #menu li.rub4b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 5**/
+#menu li.rub5{
+	border-left:10px solid #8f80b6; //#8F7FB5;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub5b{
+	border-left:10px solid #8f80b6; //#8F7FB5;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#b0a6cc;
+	}
+/**Sous-rub5**/
+#menu li.rub5b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub5b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub5b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub5b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub5b li a:hover, #menu li.rub5b li.rubOn {
+	color:#B0A5CB;
+}
+#menu li.rub5b li a, #menu li.rub5b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub5b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub5**/
+#menu li.rub5 a{
+	color:#000000;
+}
+#menu li.rub5b a{
+	color:#333333;
+}
+#menu li.rub5 a, #menu li.rub5b a{
+	text-decoration:none;
+}
+#menu li.rub5 a:hover, #menu li.rub5b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 6**/
+#menu li.rub6{
+	border-left:10px solid #bb84b5; //#BB84B5;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub6b{
+	border-left:10px solid #bb84b5; // #BB84B5;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#cfa9cb;
+	}
+/**Sous-rub6**/
+#menu li.rub6b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub6b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub6b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub6b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub6b li a:hover, #menu li.rub6b li.rubOn {
+	color:#CFA9CB;
+}
+#menu li.rub6b li a, #menu li.rub6b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub6b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub6**/
+#menu li.rub6 a{
+	color:#000000;
+}
+#menu li.rub6b a{
+	color:#333333;
+}
+#menu li.rub6 a, #menu li.rub6b a{
+	text-decoration:none;
+}
+#menu li.rub6 a:hover, #menu li.rub6b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 7**/
+#menu li.rub7{
+	border-left:10px solid #c00d1e; //#C00418;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub7b{
+	border-left:10px solid #c00d1e; //#C00418;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	background-color:#d25460;
+	}
+/**Sous-rub7**/
+#menu li.rub7b ul{
+	padding: 0;
+	margin:0;
+	}
+#menu li.rub7b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+	list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+	}
+#menu li.rub7b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub7b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub7b li a:hover, #menu li.rub7b li.rubOn {
+	color:#E45E50;
+}
+#menu li.rub7b li a, #menu li.rub7b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub7b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub7**/
+#menu li.rub7 a{
+	color:#000000;
+}
+#menu li.rub7b a{
+	color:#333333;
+}
+#menu li.rub7 a, #menu li.rub7b a{
+	text-decoration:none;
+}
+#menu li.rub7 a:hover, #menu li.rub7b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 8**/
+#menu li.rub8{
+	border-left:10px solid #8d151a; //#C00418;
+	margin-left: 0px;
+	margin-top:-1px;
+	list-style: none;
+	}
+#menu li.rub8b{
+	border-left:10px solid #8d151a; //#C00418;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+  	list-style: none;
+	background-color:#ae5a5e;
+	}
+/**Sous-rub8**/
+#menu li.rub8b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub8b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub8b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub8b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub8b li a:hover, #menu li.rub8b li.rubOn {
+	color:#E45E50;
+}
+#menu li.rub8b li a, #menu li.rub8b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub8b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub8**/
+#menu li.rub8 a{
+	color:#000000;
+}
+#menu li.rub8b a{
+	color:#333333;
+}
+#menu li.rub8 a, #menu li.rub8b a{
+	text-decoration:none;
+}
+#menu li.rub8 a:hover, #menu li.rub8b a:hover{
+	text-decoration:underline;
+}
+/*********/
+/**Rub 9**/
+#menu li.rub9{
+	border-left:10px solid #C00418;
+	margin-left: 0px;
+	margin-top:-1px;
+  list-style: none;
+}
+#menu li.rub9b{
+	border-left:10px solid #C00418;
+	color:#000000;
+	margin-left: 0px;
+	margin-top:-1px;
+  list-style: none;
+	background-color:#E45E50;
+}
+/**Sous-rub9**/
+#menu li.rub9b ul{
+	padding: 0;
+	margin:0;
+}
+#menu li.rub9b li{
+	color:#000000;
+	margin-left: -5px;
+	margin-top:5px;
+  list-style: none;
+	background-color:#FFFFFF;
+	margin-bottom:-9px;
+	padding-right: 10px;
+	width:160px;
+}
+#menu li.rub9b li a{
+	color:#000000;
+	text-decoration:none;
+}
+#menu li.rub9b li a:hover{
+	text-decoration:underline;
+}
+#menu li.rub9b li a:hover, #menu li.rub9b li.rubOn {
+	color:#E45E50;
+}
+#menu li.rub9b li a, #menu li.rub9b li a:hover {
+	font-size:1.4em;
+}
+#menu li.rub9b li.rubOn{
+	font-size:1em;
+}
+/**liens dans rub9**/
+#menu li.rub9 a{
+	color:#000000;
+}
+#menu li.rub9b a{
+	color:#333333;
+}
+#menu li.rub9 a, #menu li.rub9b a{
+	text-decoration:none;
+}
+#menu li.rub9 a:hover, #menu li.rub9b a:hover{
+	text-decoration:underline;
+}

@@ -1,0 +1,367 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Colonne de gauche*/
+#homepageNew,#homepageForum, #homepageCulture, #homepageHow{
+	/*background:#E4F7FF url(../images/reviewsProducts/headersBg.gif) repeat-x;*/
+	background:#f0fafe url(../images/reviewsProducts/headersBg.gif) repeat-x;
+	/* padding-bottom:0px; */
+	margin-bottom:5px;
+	/*border-bottom:5px solid #dcd7cd*/
+	background-color:#e4f7ff;
+	border-bottom:5px solid #CAF0FF;
+}
+#homepageCulture{
+	background-color:#fdfcfb;
+	border-bottom:5px solid #e5e6e4;
+}
+#homepageHow{
+	background-color:#fdfcfb;
+	border-bottom:5px solid #e5e6e4;
+}
+#homepageForum{
+	background-color:#fdf1fd;
+	border-bottom:5px solid #fcd5fc;
+}
+
+#homepageNew div.articleSeparator {
+	border-bottom:5px solid #CAF0FF;
+	margin-bottom:10px;
+} 
+
+#homepageCulture h3, #homepageForum h3, #homepageNew 
+h3{
+	color:#fff;
+	font:bold 14px "Helvetica Neue", Arial, sans-serif;	
+	padding:3px 5px 10px 10px;
+}
+
+#homepageHow 
+h3{
+	color:#fff;
+	font:bold 14px "Helvetica Neue", Arial, sans-serif;	
+	padding:3px 5px 5px 10px;
+}
+
+#homepageNew 
+h4 {
+	color:#A97E6E;
+	font-weight:normal;
+	padding:0 0 0 8px;
+	font-family:Georgia,Serif;
+	font-size:125%;	
+}
+
+#homepageNew h1 {
+	border-bottom:1px solid #FFFFFF;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	vertical-align:middle;
+}
+
+#homepageNew h1 a {
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#homepageNew div.braftonFoot {
+	border-top:1px solid #CAF0FF;
+	padding:8px 0 8px 8px;
+}
+#homepageCulture div.braftonFoot {
+	border-top:1px solid #e5e6e4;
+	padding:8px 0 8px 8px;
+}
+#homepageHow div.braftonFoot {
+	border-top:1px solid #e5e6e4;
+	padding:8px 0 8px 8px;
+}
+#homepageForum div.braftonFoot {
+	border-top:1px solid #fcd5fc;
+	padding:8px 0 8px 8px;
+}
+
+#homepageForum div.braftonFoot a {
+	color:#c54dc6;
+}
+
+#homepageNew img,
+#homepageHow img,
+#homepageCulture img{
+	border:0;
+	float:left;
+	margin-bottom:-5px;
+	padding:5px 5px 5px 0;	
+}
+
+#homepageNew div.article, 
+#homepageCulture div.article, 
+#homepageForum div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:8px;
+	width:154px;
+}
+#homepageHow div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:3px 5px 3px 5px;
+	width:160px;
+}
+
+#homepageNew div.articleTitle,
+#homepageCulture div.articleTitle,
+#homepageForum div.articleTitle {
+	float:left;
+	margin-right:8px;
+	width:150px;
+	font-size:11px;
+}
+#homepageHow div.articleTitle {
+	float:left;
+	margin-right:0px;
+	width:160px;
+	font-size:11px;
+}
+
+
+#homepageNew div.articleTitle a,
+#homepageCulture div.articleTitle a {
+	font-size:11px;
+	font-weight:bold;
+	line-height:14px;	
+	border-bottom:1px dotted #024AC0;
+	/*color:#0141A2;*/
+	text-decoration:none;
+}
+#homepageHow div.articleTitle a {
+	font-size:11px;
+	font-weight:bold;
+	line-height:14px;	
+	text-decoration:none;
+}
+
+#homepageForum div.articleTitle a {
+	font-size:11px;
+	font-weight:bold;
+	line-height:14px;
+	border-bottom:1px dotted #024AC0;
+	color:#c54dc6;
+	text-decoration:none;
+}
+
+#homepageNew div.article p.date,
+#homepageCulture div.article p.date,
+#homepageHow div.article p.date,
+#homepageForum div.article p.date {
+	float:left;
+	color:#b2a39b;
+	font-size:10px;
+}
+
+#homepageNew .borderBlue,
+#homepageForum .borderBlue {
+	border-top:1px solid #CAF0FF;
+}
+
+#homepageCulture .borderGrey {
+	border-top:1px solid #e5e6e4;
+}
+#homepageHow .borderGrey {
+	border-top:1px solid #e5e6e4;
+}
+
+#leftAd, #leftAdTop {
+	border-bottom:1px solid #AEA99E;
+	border-right:1px solid #AEA99E;
+	padding-bottom:10px;
+	text-align:center;
+	width:170px;
+}
+#leftAd {
+	background:#cadee9 url(../images/v5/blueBg.gif) repeat-y scroll 0 0;
+}	
+#leftAdTop {
+	background:#cadee9 url(../images/v5/blueTopBg.gif) repeat-y scroll 0 0;
+}	
+
+
+#leftAd, #leftAdTop {
+	margin:0px 0 5px 0;
+	width:170px;
+}
+#leftAd h3{
+	background:transparent url(../images/v5/leftAdBg.gif) repeat-x scroll 0 0;
+	margin:0 0 0 2px;
+	padding:5px 0 3px 0;
+}
+#leftAdTop h3 {
+	background:transparent url(../images/v5/leftAdTopBg.gif) repeat-x scroll 0 0;
+	margin:0 0 0 2px;
+	padding:5px 0 3px 0;
+}
+
+/*#editorsBlog p, #editorsBlog
+h4{
+	padding:5px 0
+}
+.editorsBlogContent{
+	padding:0
+	10px 10px 10px;
+	font-size:10px;
+	height:1%
+}
+#editorsBlog
+img{
+	border:1px
+	solid #caf0ff;
+	padding:5px;
+	margin:3px
+	0 3px 3px;
+	background-color:#fff;
+	float:right
+}*/
+
+
+#middleContent {
+	float:left;
+	height:1%;
+	margin-left:10px;
+	width:469px;
+}
+
+.row {
+	display:inline-block;
+	width:100%;
+}
+.read {
+
+}
+
+.header {
+	float:left;
+	padding-bottom:5px;
+	width:100%;
+}
+.header h3 {
+	background:#FFFFFF url(../images/v5/hdrBg_blue.gif) repeat-x scroll 0 0;
+	font-size:15px;
+	font-weight:bold;
+	color:#18506c;
+	height:25px;
+	overflow:hidden;
+	padding:4px 0 0 10px;
+}
+
+.singleColumnBig {
+	width:469px;
+}
+.singleColumnBig h2 {
+	font-family:Georgia,Serif;
+	font-size:12px;
+	font-weight:bold;	
+}
+.singleColumnBig h3 {
+	clear:both;
+	text-decoration:underline;
+	font-family:Georgia,Serif;
+	font-size:12px;
+	font-weight:normal;	
+	color:#184059;
+	margin:5px 0 5px 0;
+}
+.singleColumnBig p {
+	font-size:12px;
+	margin-top:5px;
+}
+.singleColumnBig p.resume {
+	font-style:italic;
+	font-weight:normal;
+	color:#4082a5;
+	/*color:350a09;	*/
+}
+.singleColumnBig span.viewsComments {
+	font-size:11px;
+}
+
+
+.singleColumnSmall {
+	width:180px;
+}
+
+.singleColumnBig, .singleColumnSmall, .singleColumn, .doubleColumn, .halfColumn {
+	color:#000000;
+	float:left;
+	font-size:12px;
+	margin:0 10px 0 0;
+}
+
+#reelFilNews{
+	margin-top:5px;
+}
+
+.list, .editorialList {
+	color:#0083B7;
+	display:inline-block;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.singleColumnBig ul.list li .heure {
+	clear:both;
+	font-weight:bold;
+	color:#CC0033;
+	float:left;
+	margin-right:8px;
+	width:47px;
+}
+.singleColumnBig ul.list li .titre {
+	display:block;
+	float:left;
+	padding-bottom:8px;
+	width:412px;
+}
+.singleColumnBig .viewsComments{
+	width:469px;
+}
+
+.singleColumnBig .viewsComments p.date{
+	float:right;
+}
+.singleColumnBig strong{
+	color:#2972a0;
+	border-bottom:1px dotted #2972a0;
+	line-height:14px;
+}
+
+/**/
+#homepageHow .articleTitle .incArrow {
+	display:inline;
+	float:left;
+	padding:5px 4px 0 0;
+	width:6px;
+}
+#homepageHow .articleTitle .incTexte {
+	display:inline;
+	float:left;
+	width:150px;
+}
+#homepageHow h4 {
+	color:#856357;
+	font-family:Georgia,Serif;
+	font-size:125%;
+	font-weight:normal;
+	margin-bottom:0;
+	padding:0px 0 0 8px;
+}
+
+
+
+
+
+

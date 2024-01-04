@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#white
+h1{
+	
+	
+	color:#FFFFFF;
+	/*display:inline;*/
+	font-family:Helvatica,Arial;
+	font-size:24px;
+	font-weight:bold;
+	margin:5px 0 0;
+	padding:0 0 0 5px;
+	text-transform:lowercase;
+	height:45px;
+	line-height:36px;
+	
+	
+}
+
+#wrapper.forum #neapolitan #main #white
+h1{
+	background:#fff url(../images/reviewsProducts/pageTitleBg.gif) no-repeat
+}
+
+#leftColumn{
+	float:left;
+	clear:left
+}
+#leftColumn{
+	float:left;
+	clear:left
+}
+
+#finder,#reviewCriteria,#editorsBlog, #innerpageBlog{
+	/*margin-left:10px;*/
+	width:170px;
+	margin-bottom:0
+}
+#reviewCriteria{
+	margin-top:10px
+}
+
+
+/*  Partie de droite*/
+#brown {
+	float:right;
+	width:300px;
+}
+#adSpace, #adSpace2, #adSpace3, #adSpace4 {
+	/*float:left;*/
+	background:#cadee9 url(../images/v5/blueBg.gif) repeat-y scroll 0 0;
+	padding-bottom:5px;	
+	margin-bottom:5px;
+	width:290px;
+}
+#adSpace img, #adSpace2 img, #adSpace3 img, #adSpace4 img, #adRight img {
+	border:medium none;
+}
+
+p.adText {
+	text-align:center;
+	margin:0 0 0 0px;
+	padding:3px 0 3px;
+}
+
+
+#adRight {
+	/*background:transparent url(http://images.totalbeauty.com/img/v5/lozenge2Bg.gif) repeat-y scroll 0 0;*/
+	background:#FFFFFF none repeat scroll 0 0;
+	padding-bottom:0px 0 5px 0;
+}
+
+#innerpageAnnounce, #innerpagePratique, #innerpageNew {
+	margin:5px 0 5px;
+}
+
+#innerpageAnnounce, #innerpageBlog, #innerpagePratique, #innerpageNew {
+	background:#E4F7FF url(../images/reviewsProducts/headersBg.gif) repeat-x scroll 0 0;
+	border-bottom:5px solid #CAF0FF;
+	font-family:"Helvetica Neue",Arial,sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	/*font-weight:bold;*/
+	line-height:normal;
+	/*margin-top:10px;*/
+	/*padding-bottom:5px;*/
+	width:290px;
+}
+#innerpagePratique {
+	background-color:#fdfcfb;
+	border-bottom:5px solid #e5e6e4;
+}
+#innerpageAnnounce h4, #innerpageBlog h4, #innerpagePratique h4, #innerpageNew h4 {
+	background:#E4F7FF url(../images/reviewsProducts/headersBg.gif) repeat-x scroll 0 0;
+	border-bottom:1px solid #E4F7FF;
+	color:#FFFFFF;
+	font-family:"Helvetica Neue",Arial,sans-serif;
+	font-size:14px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:normal;
+	padding:3px 10px 5px;
+}
+#innerpageAnnounce li {
+	overflow:hidden;
+	border-bottom:1px solid #FFFFFF;
+}
+#innerpageAnnounce li .announceTitle {
+	display:block;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:11px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	padding:5px 0;
+}
+#innerpageAnnounce li .announceTitle a {
+	/*background:#E4F7FF url(http://images.totalbeauty.com/img/video/videoPlayIcon.gif) no-repeat scroll 0 1px;*/
+	padding:0 5px 0 0;
+	border-bottom:1px dotted #024AC0;
+	font-size:11px;
+	font-weight:bold;
+	line-height:14px;
+	text-decoration:none;
+}
+
+#innerpageNew li {
+	overflow:hidden;
+	border-bottom:1px solid #FFFFFF;
+}
+#innerpageNew li .titre {
+	display:block;
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:11px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	width:235px;
+}
+#innerpageNew li .titre a {
+	/*background:#E4F7FF url(http://images.totalbeauty.com/img/video/videoPlayIcon.gif) no-repeat scroll 0 1px;*/
+	padding:0 5px 0 0;
+	border-bottom:1px dotted #024AC0;
+	font-size:11px;
+	font-weight:normal;
+	line-height:14px;
+	text-decoration:none;
+}
+
+#innerpageNew li .heure {
+	clear:both;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-weight:bold;
+	font-size:11px;
+	color:#267198;
+	float:left;
+	margin-right:8px;
+	width:47px;
+}
+
+
+.videoThumb {
+	border:1px solid #CAF0FF;
+	clear:left;
+	float:left;
+	height:58px;
+	margin:6px;
+	width:58px;
+}
+
+.viewsComments {
+	display:block;
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:normal;
+	margin:0 5px 0 0;
+}
+
+.viewsComments span {
+	color:#A97E6E;
+	font-weight:bold;
+}
+
+.viewsComments p.date {
+	color:#C3AB9E;
+	font-size:10px;
+}
+
+#innerpageBlog div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:8px;
+	width:270px;
+	}
+#innerpageBlog div.articleTitle {
+	font-size:11px;
+	float:right;
+	margin-left:4px;
+	margin-right:15px;
+	width:190px;
+}
+
+#innerpageBlog div.articleTitle 
+a {
+	border-bottom:1px dotted #024AC0;
+	font-weight:bold;
+	line-height:14px;
+	text-decoration:none;
+}
+
+#innerpageBlog div.article 
+p.date {
+	color:#C3AB9E;
+	font-size:10px;
+}
+
+#innerpageBlog div.article 
+img {
+	float:left;
+}
+
+#innerpagePratique div.article {
+	border-bottom:1px solid #FFFFFF;
+	overflow:hidden;
+	padding:8px;
+	width:270px;
+	}
+#innerpagePratique div.articleTitle {
+	font-size:11px;
+	float:right;
+	margin-left:4px;
+	margin-right:15px;
+	width:190px;
+}
+
+#innerpagePratique div.articleTitle 
+a {
+	border-bottom:1px dotted #024AC0;
+	font-weight:bold;
+	line-height:14px;
+	text-decoration:none;
+}
+
+#innerpagePratique div.article 
+p.date {
+	color:#C3AB9E;
+	font-size:10px;
+}
+
+#innerpagePratique div.article 
+img {
+	float:left;
+}
+
+#innerpageBlog div.braftonFoot,
+#innerpageAnnounce div.braftonFoot,
+#innerpageNew div.braftonFoot{
+	border-top:1px solid #CAF0FF;
+	padding:8px 0 8px 8px;
+	font-size:11px;
+}
+
+#innerpagePratique div.braftonFoot {
+	border-top:1px solid #e5e6e4;
+	padding:8px 0 8px 8px;
+	font-size:11px;
+}
+
+
+#lozengeBottom {
+	background:#FFFFFF none repeat scroll 0 0;
+	padding-bottom:10px;
+}
+
+#adsenseWrap {
+	background:transparent none repeat scroll 0 0;
+}
+#adsenseWrap {
+	background:transparent url(../images/v5/bg_adsenseBorder.gif) no-repeat scroll 0 0;
+	padding:1px 0 10px 20px;
+	width:300px;
+}
+
+.singleColumnBig p.errorMessage{
+	color:#C40000;
+	vertical-align:middle;
+	text-align:center;
+	margin-left:5px;
+}
+.singleColumnBig .errorMessage img{
+	border:0 none;
+	float:none;
+	vertical-align:middle;
+	padding-bottom:5px;
+}
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="immobilier" realname="immobilier" primarykey="immobilier_id" />
+    </datasources>
+    <record>
+
+    <property name="immobilier_id" fieldname="immobilier_id" datatype="autoincrement"/>
+	<property name="immobilier_annonceId" fieldname="immobilier_annonceId" datatype="int" required="true"/>
+	<property name="immobilier_typePropriete" fieldname="immobilier_typePropriete" datatype="int" required="true"/>
+	<property name="immobilier_typeBatiment" fieldname="immobilier_typeBatiment" datatype="int" required="true"/>
+	<property name="immobilier_nbChambre" fieldname="immobilier_nbChambre" datatype="string" required="true"/>
+	<property name="immobilier_construction" fieldname="immobilier_construction" datatype="string" required="true"/>
+	<property name="immobilier_foyer" fieldname="immobilier_foyer" datatype="int" required="true"/>
+	<property name="immobilier_piscine" fieldname="immobilier_piscine" datatype="int" required="true"/>
+	<property name="immobilier_bergeRive" fieldname="immobilier_bergeRive" datatype="int" required="true"/>
+	<property name="immobilier_panorama" fieldname="immobilier_panorama" datatype="int" required="true"/>
+	<property name="immobilier_garage" fieldname="immobilier_garage" datatype="int" required="true"/>
+	<property name="immobilier_ascenceur" fieldname="immobilier_ascenceur" datatype="int" required="true"/>
+	<property name="immobilier_climatisation" fieldname="immobilier_climatisation" datatype="int" required="true"/>
+	<property name="immobilier_thermopompe" fieldname="immobilier_thermopompe" datatype="int" required="true"/>
+	<property name="immobilier_ventePar" fieldname="immobilier_ventePar" datatype="string" required="true"/>
+	<property name="immobilier_sousSolAmenage" fieldname="immobilier_sousSolAmenage" datatype="int" required="true"/>
+	<property name="immobilier_nomCadastre" fieldname="immobilier_nomCadastre" datatype="string" required="true"/>
+	<property name="immobilier_certificatLocalisation" fieldname="immobilier_certificatLocalisation" datatype="int" required="true"/>
+	<property name="immobilier_certificatAnnee" fieldname="immobilier_certificatAnnee" datatype="string" required="true"/>
+	<property name="immobilier_dateOccupation" fieldname="immobilier_dateOccupation" datatype="date" required="true"/>
+	<property name="immobilier_adresse" fieldname="immobilier_adresse" datatype="string" required="true"/>
+	<property name="immobilier_cp" fieldname="immobilier_cp" datatype="string" required="true"/>
+	<property name="immobilier_terrainDimension" fieldname="immobilier_terrainDimension" datatype="string" required="true"/>
+	<property name="immobilier_terrainSuperficie" fieldname="immobilier_terrainSuperficie" datatype="string" required="true"/>
+	<property name="immobilier_batimentDimension" fieldname="immobilier_batimentDimension" datatype="string" required="true"/>
+	<property name="immobilier_superficieHabitable" fieldname="immobilier_superficieHabitable" datatype="string" required="true"/>
+	<property name="immobilier_evaluationAnnee" fieldname="immobilier_evaluationAnnee" datatype="string" required="true"/>
+	<property name="immobilier_evaluationTerrain" fieldname="immobilier_evaluationTerrain" datatype="string" required="true"/>
+	<property name="immobilier_evaluationBatiment" fieldname="immobilier_evaluationBatiment" datatype="string" required="true"/>
+	<property name="immobilier_evaluationTotale" fieldname="immobilier_evaluationTotale" datatype="string" required="true"/>
+	<property name="immobilier_evaluationDisponible" fieldname="immobilier_evaluationDisponible" datatype="int" required="true"/>
+	<property name="immobilier_taxeScolaire" fieldname="immobilier_taxeScolaire" datatype="string" required="true"/>
+	<property name="immobilier_taxeMunicipal" fieldname="immobilier_taxeMunicipal" datatype="string" required="true"/>
+	<property name="immobilier_taxeAnnuelle" fieldname="immobilier_taxeAnnuelle" datatype="double" required="true"/>
+	<property name="immobilier_revenuAnnuel" fieldname="immobilier_revenuAnnuel" datatype="string" required="true"/>
+	<property name="immobilier_locationLogement" fieldname="immobilier_locationLogement" datatype="string" required="true"/>
+	<property name="immobilier_assurance" fieldname="immobilier_assurance" datatype="string" required="true"/>
+	<property name="immobilier_combustibleChauffage" fieldname="immobilier_combustibleChauffage" datatype="string" required="true"/>
+	<property name="immobilier_electricite" fieldname="immobilier_electricite" datatype="string" required="true"/>
+	<property name="immobilier_fraisPartages" fieldname="immobilier_fraisPartages" datatype="string" required="true"/>
+	<property name="immobilier_chauffage" fieldname="immobilier_chauffage" datatype="int" required="true"/>
+	<property name="immobilier_inclusion" fieldname="immobilier_inclusion" datatype="string" required="true"/>
+	<property name="immobilier_exclusion" fieldname="immobilier_exclusion" datatype="string" required="true"/>
+	<property name="immobilier_nbPiece" fieldname="immobilier_nbPiece" datatype="double" required="true"/>
+	<property name="immobilier_nbSalleBain" fieldname="immobilier_nbSalleBain" datatype="double" required="true"/>
+	<property name="immobilier_nbSalleEau" fieldname="immobilier_nbSalleEau" datatype="double" required="true"/>
+	<property name="immobilier_bail" fieldname="immobilier_bail" datatype="string" required="true"/>
+	<property name="immobilier_hallEntree" fieldname="immobilier_hallEntree" datatype="string" required="true"/>
+	<property name="immobilier_salleFamilliale" fieldname="immobilier_salleFamilliale" datatype="text" required="true"/>
+	<property name="immobilier_cuisine" fieldname="immobilier_cuisine" datatype="text" required="true"/>
+	<property name="immobilier_salleManger" fieldname="immobilier_salleManger" datatype="text" required="true"/>
+	<property name="immobilier_salleEau" fieldname="immobilier_salleEau" datatype="text" required="true"/>
+	<property name="immobilier_salon" fieldname="immobilier_salon" datatype="text" required="true"/>
+	<property name="immobilier_chambrePrincipale" fieldname="immobilier_chambrePrincipale" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre1" fieldname="immobilier_chambreAutre1" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre2" fieldname="immobilier_chambreAutre2" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre3" fieldname="immobilier_chambreAutre3" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre4" fieldname="immobilier_chambreAutre4" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre5" fieldname="immobilier_chambreAutre5" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre6" fieldname="immobilier_chambreAutre6" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre7" fieldname="immobilier_chambreAutre7" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre8" fieldname="immobilier_chambreAutre8" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre9" fieldname="immobilier_chambreAutre9" datatype="text" required="true"/>
+	<property name="immobilier_chambreAutre10" fieldname="immobilier_chambreAutre10" datatype="text" required="true"/>
+	<property name="immobilier_salleBain" fieldname="immobilier_salleBain" datatype="text" required="true"/>
+	<property name="immobilier_rangement" fieldname="immobilier_rangement" datatype="string" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>

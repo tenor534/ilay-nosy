@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+
+.actualiteContent{
+	padding-top:10px;
+	width:640px;
+	margin:0 0 0 10px;
+}
+#actualiteForm p{
+	margin:0 0 10px 0;
+}
+#actualiteForm .actualiteTitre {
+	color:#184059;
+	font-family:Georgia,Serif;
+	font-size:105%;
+	font-weight:normal;
+	margin-bottom:10px;
+	padding:2px 0 0;
+}
+
+.actualiteCriteriaLineLeft {
+	float:left;
+	margin-bottom:0px;
+	width:400px;
+}
+.actualiteCriteriaLineRight {
+	float:left;
+	margin:0 0 0px 10px;
+	width:230px;
+}
+
+.actualiteCriteria {
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+
+.viewResult {
+	background:transparent url(../images/v6/box-titre-top.png) no-repeat scroll 0 0;
+	clear:both
+	background-color:#F5F3ED;
+	color:#184059;
+	font-family:Georgia,Serif;
+	font-size:12px;
+	font-weight:normal;
+	width:650px;
+	height:63px;
+}
+
+.viewResult p {
+	/*margin-left:5px;*/
+}
+.viewResult p .viewTitre{
+	/*color:#18506C;*/
+	color:#006e12;	
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 0 0 10px; 
+}
+.viewResult p .viewTexte{
+	/*color:#18506C;*/
+	color:#0066cc;	
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	padding:0 0 0 10px;
+	line-height:15px;
+}
+
+.viewResult .view {
+	float:left;
+	padding:8px 15px 0 0;
+}
+
+/*footer pagination*/
+.regText, .regTextPale, .regTextPaleBlue, .regTextBlue, .regTextBlueMast, .crumbsBlue {
+	font-size:10px;
+	font-weight:bold;
+}
+.regTextPale {
+	color:#A97E6E;
+	line-height:12px;
+}
+.commFoot {
+	background:transparent url(../images/v5/comm_foot.gif) no-repeat scroll 0 0;
+	border:medium none;
+	border-collapse:collapse;
+	height:38px;
+	width:650px;
+}
+
+.commFoot3 {
+	float:right;
+	background-position:-300px 0;
+	border:medium none;
+	border-collapse:collapse;
+	height:38px;
+	padding:10px 0 0 0;
+	width:330px;
+}
+.actualiteFoot {
+	padding:10px 0 0 10px;
+	float:left;
+	width:200px;
+}
+
+.commFoot .commFoot3 ul.pageNumbers {
+	float:right;
+	margin:-5px 0 0;
+	position:relative;
+}
+
+.commFoot .static {
+	float:left;
+	padding:10px;
+	width:300px;
+}
+
+ul.pageNumbers li.lastPage, ul.pageNumbers li.prevButton, ul.pageNumbers li.nextButton,
+ul.pageNumbers li.firstButton, ul.pageNumbers li.lastButton {
+	border:medium none;
+}
+ul.pageNumbers li {
+	display:inline;
+	border-right:1px solid #FFFFFF;
+	float:left;
+	margin:0;
+	padding:0 7px;
+}
+
+
+a.pageFirst,
+a.pageLast,
+a.pageNext,
+a.pagePrevious {
+	display:block;
+	height:21px;
+	line-height:12px;
+	text-indent:-9000px;
+	width:22px;
+	text-indent:-9000px;
+}
+
+ul.pageNumbers li a.pageCurrent {
+	color:#BB0000;	
+	text-decoration:none;
+	border-bottom:1px dotted #BB0000;
+}
+
+ul.pageNumbers li.firstButton,
+ul.pageNumbers li.nextButton {
+	padding-right:1px;
+}
+ul.pageNumbers li.lastButton,
+ul.pageNumbers li.prevButton {
+	padding-left:1px;
+}
+
+ul.pageNumbers li.lastPage,
+ul.pageNumbers li.noButton {
+	padding-top:3px;
+}
+
+
+a.pageFirst {
+	background:transparent url(../images/v5/btn_first.png) no-repeat scroll 0 0;
+}	
+a.pageFirst:hover {
+	background:transparent url(../images/v5/btn_first.png) no-repeat scroll 0 -21px;
+}
+a.pageFirst:active {
+	background:transparent url(../images/v5/btn_first.png) no-repeat scroll 0 -42px;
+}
+a.pageLast {
+	background:transparent url(../images/v5/btn_last.png) no-repeat scroll 0 0;
+}	
+a.pageLast:hover {
+	background:transparent url(../images/v5/btn_last.png) no-repeat scroll 0 -21px;
+}
+a.pageLast:active {
+	background:transparent url(../images/v5/btn_last.png) no-repeat scroll 0 -42px;
+}
+a.pagePrevious {
+	background:transparent url(../images/v5/btn_back.png) no-repeat scroll 0 0;
+}	
+a.pagePrevious:hover {
+	background:transparent url(../images/v5/btn_back.png) no-repeat scroll 0 -21px;
+}
+a.pagePrevious:active {
+	background:transparent url(../images/v5/btn_back.png) no-repeat scroll 0 -42px;
+}
+a.pageNext {
+	background:transparent url(../images/v5/btn_next.png) no-repeat scroll 0 0;
+}
+a.pageNext:hover {
+	background:transparent url(../images/v5/btn_next.png) no-repeat scroll 0 -21px;
+}
+a.pageNext:active {
+	background:transparent url(../images/v5/btn_next.png) no-repeat scroll 0 -42px;
+}
+
+.img_photo .extra_etiquette {
+	background:transparent url(../images/v6/bg-nb-img.gif) no-repeat scroll 0 0;
+	color:#FFFFFF;
+	display:block;
+	font-size:83%;
+	height:16px;
+	left:10px;
+	overflow:hidden;
+	padding:0 5px;
+	margin-top:-135px;
+	position:absolute;
+	text-align:center;
+}
+.result_foot {
+	background:#F5F3ED none repeat scroll 0 0;
+	font-size:10px;
+	overflow:hidden;
+	padding:0 12px 5px;
+}
+.regTextPaleNormal {
+	color:#A97E6E;
+	font-size:10px;
+	font-weight:normal;
+}
+.borderLeftInline {
+	border-left:1px solid #A97E6E;
+	display:inline;
+	padding-left:5px;
+}
+.borderNoneInline {
+	display:inline;
+	padding-right:5px;
+	vertical-align:middle;
+}
+a.hotTopics {
+	color:#0083B7;
+	font-size:10px;
+	font-weight:normal;
+	text-decoration:none;
+}
+.result_foot ul {
+	margin-top:8px;
+	text-align:right;
+	float:left;
+}
+
+.result_foot .float_r {
+	width:45%;
+}
+.bt_add {
+	font-size:10px;
+}
+.float_r {
+	float:right !important;
+}
+#contentPageMain .return{
+	float:right;
+	margin:10px 0 15px;	
+}
+#contentPageMain .resultReturn{
+	float:right;
+	margin:10px 0 0;	
+}
+.hidden_elem {
+	display:none;	
+}
+#contentPageMain .view {
+	color:#0066CC;
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	padding:5px 0 0 0px;
+	margin-right:5px;
+	text-decoration:none;
+	border-bottom:1px dotted #0066CC; 
+}
+
+.titrePhoto {
+	display:block;
+	border-bottom:1px dotted #0066CC;
+	color:#0066CC;
+	float:left;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	margin-right:5px;
+	padding:0 0 0 0;
+	text-decoration:none;
+	width:155px;
+}
+.titrePhoto a:hover {
+	text-decoration:none;
+	cursor:pointer;
+}
+
+/*----------------Récapitule les critères---------------------*/
+#viewCriteria {
+	color:#184059;
+	font-family:Georgia,Serif;
+	font-size:12px;
+	font-weight:normal;
+	height:auto;
+	width:650px;
+}
+
+#viewCriteria .headPan {
+	background:transparent url(../images/v7/creteria-pan-b-top.png) no-repeat scroll 0 0;
+	color:#184059;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:30px;
+	width:650px;
+}
+
+#viewCriteria .headPan .viewTitre {
+	color:#FBF1D8;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 0 0 10px;
+}
+
+
+#viewCriteria .middlePan {
+	float:left;
+	height:auto;
+	border-left:1px solid #263348;	
+	border-right:1px solid #263348;	
+}
+#viewCriteria .middlePan .blank {
+	float:left;
+	border-left:1px solid #476c98;	
+	border-right:1px solid #476c98;	
+}
+#viewCriteria .middlePan  .blank .content {
+	float:left;
+	background-color:#d7e0eb;
+	border-left:1px solid #0a3b76;	
+	border-right:1px solid #0a3b76;	
+	width:644px;
+}
+
+#viewCriteria 
+.middlePan  
+.blank 
+.content 
+.criteria {
+	display:block;
+	float:left;
+	padding-left:5px;
+	width:317px;
+}
+
+#viewCriteria 
+.middlePan  
+.blank 
+.content 
+.criteria 
+.item {
+	float:left;
+	color:#999999;
+	width:100px;
+}
+#viewCriteria 
+.middlePan  
+.blank 
+.content 
+.criteria 
+.value {
+	float:left;	
+	width:217px;
+}
+#viewCriteria 
+.middlePan  
+.blank 
+.content 
+.criteria 
+.value a{
+	color:#0066CC;
+	font-size:12px;	
+}
+#viewCriteria 
+.middlePan  
+.blank 
+.content 
+.criteria 
+.value a:hover{
+	color:#006E12;
+	font-size:12px;	
+	text-decoration:blink;
+}
+
+#viewCriteria .footPan {
+	clear:both;
+	background:transparent url(../images/v7/creteria-pan-b-bottom.png) no-repeat scroll 0 0;
+	color:#184059;
+	font-family:"Trebuchet MS",Arial,Sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:25px;
+	width:650px;
+}
+#viewCriteria .footPan .viewTitre {
+	color:#73aecd;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 0 0 10px;
+}
+
+/*----------------Choix des catégories--------------*/
+.singleColumnBig h3 {
+	color:#006E12;
+	font-family:Georgia,Serif;
+	font-size:12px;
+	font-weight:normal;
+	margin:5px 0;
+}
+#box_cat .cat_box a {
+	color:#0066CC;
+}
+#box_cat .cat_supp ul li img{ 
+	border:medium none;
+	margin:5px 3px 0 0;
+}
+#box_cat .cat_supp ul li a{ 
+	color:#101010;
+}
+#box_cat  ul.allCateg li a{ 
+	color:#015779;
+	text-decoration:none;
+}
+
+/*--------Message d'erreur pour l'ajout de commentaire------*/
+.lipLinerFoot p.errorMessage {
+	color:#C40000;
+	margin:8px 0 0 250px;
+	position:absolute;
+	text-align:center;
+	vertical-align:middle;
+}

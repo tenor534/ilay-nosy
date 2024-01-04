@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Document */
+.result {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+}
+
+
+#results {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	width:650px;
+}
+#results .result {
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #C6C6C6;
+	margin:0 0 15px;
+}
+#results .result_express {
+	background:#F8F8F6;
+	border:1px solid #ABADB3;
+	margin:0 0 15px;
+}
+#results .result_title h4 {
+	display:inline;
+	float:left;
+	margin:-10px 0 5px 5px;
+	font-size:117%;
+	font-weight:bold;
+}
+#results .result_title h4 a {
+	background:#F9FAFC none repeat scroll 0 0;
+	padding:0 4px;
+}
+
+#results .result_title h4 .price {
+	display:block;
+	padding:3px 4px 0;
+}
+.price_info {
+	font-weight:normal;
+}
+#results .result_express .result_title div {
+	float:right;
+	margin:-10px 0 0;
+	max-width:50%;
+}
+#results .result_express .result_title div p {
+	margin:0 5px 0 0;
+	text-align:right;
+}
+#results .result_express .result_title div p span {
+	background:#F9FAFC none repeat scroll 0 0;
+	padding:0 4px;
+}
+.special {
+	color:#FF8A00;
+	font-weight:bold;
+	font-size:117%;
+}
+#results .result_title ul {
+	display:inline;
+	float:right;
+	font-size:100%;
+	margin:5px 8px 0 0;
+}
+#results .result_title ul li {
+	float:left;
+}
+ul.split li {
+	/*background:transparent url(../../img/0/split-list.gif) no-repeat scroll right center;*/
+	display:inline;
+	line-height:1.5em;
+	margin-right:2px;
+	border-right:1px solid #A97E6E;
+	display:inline;
+	padding-right:5px;	
+}
+#results .result_title ul li span, #results .result_title ul li a {
+	float:left;
+}
+
+#results .result_title ul li {
+	float:left;
+}
+ul.split li.last {
+	background:transparent none repeat scroll 0 0;
+	margin-right:0;
+	padding-right:0;
+	border-right:none;
+}
+
+#results .result_express .result_title div ul.split li.last {
+	padding-left:2px;
+}
+/*--*/
+.result_desc {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:11px;
+	margin:0 0 5px;
+	overflow:hidden;
+	width:100%;
+}
+.result_desc .img_photo {
+	float:left;
+	padding:0 0 0 10px;
+	position:relative;
+	width:195px;
+}
+
+.result_express .img_photo .extra_etiquette {
+	background-position:0 -16px;
+}
+
+.pop_up_inner .img_photo .extra_etiquette {
+	margin:-275px 0 0 45px;
+}
+.info_list dl dt, .date {
+	color:#A97E6E;
+}
+.result_desc .desc_txt {
+	float:left;
+	width:443px;
+}
+.result_desc p, .result_desc ul {
+	margin:0 0 10px;
+	line-height:1.4em;
+}
+.result_desc p.red {
+	color:#D90000;
+	margin-bottom:2px;
+}
+
+.result_desc h5 {
+	margin:0;
+	font-weight:bold;
+	font-size:110%;
+	text-decoration:underline;
+}	
+/*-------*/
+/*--------------------------Forfait---------------------------------*/
+
+#forfait_paiment .bloc_forfait_visiteur_split {
+	background:transparent url(../images/v6/fond_paiment_visiteur_split.png) no-repeat scroll 0 0;
+	margin-left:27px;
+}
+#forfait_paiment .bloc_forfait_immobilier_split {
+	background:transparent url(../images/v6/fond_paiment_immobilier_split.png) no-repeat scroll 0 0;
+	margin-left:27px;
+}
+#forfait_paiment .bloc_forfait_vehicule_split {
+	background:transparent url(../images/v6/fond_paiment_vehicule_split.png) no-repeat scroll 0 0;
+	margin-left:27px;
+}
+#forfait_paiment .bloc_forfait_emploi_split {
+	background:transparent url(../images/v6/fond_paiment_emploi_split.png) no-repeat scroll 0 0;
+	margin-left:27px;
+}
+#forfait_paiment .bloc_inner {
+	width:596px;
+}
+#forfait_paiment .bloc_inner .bloc_input {
+	color:#FFFFFF;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	line-height:33px;
+	width:123px;
+}
+
+#forfait_paiment .bloc_inner .bloc_input input {
+	background-color:transparent;
+	border:medium none;
+}
+input {
+	background:#D9E7F1 none repeat scroll 0 0;
+	border:1px solid #CCCCCC;
+	color:#333333;
+	margin:2px 0 0 15px;
+}
+#forfait_paiment .bloc_inner .bloc_desc {
+	color:#666666;
+	float:left;
+	text-align:center;
+	width:379px;
+}
+#forfait .separateur, #forfait_paiment .separateur {
+	background:#CC9900 none repeat scroll 0 0;
+	display:inline-block;
+	height:4px;
+	vertical-align:middle;
+	width:4px;
+}
+#forfait_paiment .bloc_inner .bloc_prix {
+	color:#666666;
+	padding-top:2px;
+	float:left;
+	font-family:helvetica;
+	font-size:16px;
+	font-weight:bold;
+	line-height:33px;
+	margin-right:9px;
+	text-align:right;
+	width:85px;
+}
+#forfait_paiment .bloc_forfait_visiteur_split .bloc_foot, #forfait_paiment .bloc_forfait_visiteur .bloc_foot {
+	background:transparent url(../images/v6/fond_paiment_visiteur_foot.png) no-repeat scroll 0 0;
+}
+#forfait_paiment .bloc_forfait_immobilier_split .bloc_foot, #forfait_paiment .bloc_forfait_immobilier .bloc_foot {
+	background:transparent url(../images/v6/fond_paiment_immobilier_foot.png) no-repeat scroll 0 0;
+}
+#forfait_paiment .bloc_forfait_vehicule_split .bloc_foot, #forfait_paiment .bloc_forfait_vehicule .bloc_foot {
+	background:transparent url(../images/v6/fond_paiment_vehicule_foot.png) no-repeat scroll 0 0;
+}
+#forfait_paiment .bloc_forfait_emploi_split .bloc_foot, #forfait_paiment .bloc_forfait_emploi .bloc_foot {
+	background:transparent url(../images/v6/fond_paiment_emploi_foot.png) no-repeat scroll 0 0;
+}
+
+#forfait_paiment .bloc_foot {
+	clear:both;
+	font-size:1px;
+	height:5px;
+	overflow:hidden;
+}
+
+/*----------------------------------------------------------------------------------------*/
+#forfait_paiment .bloc_forfait_autres {
+	background:transparent url(../images/v6/fond_autres_paiment.png) no-repeat scroll 25px 0;
+	margin-left:54px;
+}
+
+#forfait_paiment .bloc_forfait_autres .bloc_inner .bloc_input {
+	width:150px;
+}
+
+#forfait_paiment .bloc_forfait_autres .bloc_inner p {
+	line-height:34px;
+	margin:2px 0 10px;;
+}
+#forfait_paiment .bloc_forfait_autres .bloc_inner p input{
+	margin:0 0 0 0;
+}
+#forfait_paiment .bloc_forfait_autres .bloc_inner .bloc_desc {
+	text-align:left;
+	width:280px;
+}
+.clearer {
+	clear:both;
+	float:none !important;
+	font-size:1px;
+	height:1px;
+	line-height:0;
+	margin:0 !important;
+	overflow:hidden;
+	padding:0 !important;
+	width:100% !important;
+}
+
+
+#annonceForm{
+	background:#f6fcfc;
+	border-bottom:5px solid #d8f2fc;
+}
+
+
+.annonceContent{
+	padding-top:5px;
+	width:429px;
+	margin:0 0 0 10px;
+}
+#annonceForm p{
+	margin:0 0 10px 0;
+}
+#annonceForm div.articleSeparator {
+	border-bottom:5px solid #d8f2fc;
+	margin-bottom:5px;
+}
+
+
+#annonceForm .annonceTitre {
+	font-family:Georgia,Serif;
+	font-weight:normal;
+	font-size:100%;
+	color:#184059;
+	padding:2px 0 0 0;
+	margin-bottom:10px;
+}
+
+#annonceForm label {
+	clear:left;
+	float:left;
+	width:100px;
+}
+
+#annonceForm .delais {
+	float:left;
+	height:20px;
+	width:100px;
+	margin-bottom:5px;
+}
+#annonceForm .plutard {
+	padding-left:70px;
+}
+
+#annonceForm .annonceContent select,
+#annonceAbonnementForm .annonceAbonnementContent select {
+	margin:5px 0 0;
+}
+
+
+
+#annonceForm .formButton_valid {
+	margin-left:255px;
+}
+
+
+/*form d'ajout*/
+
+#annonceAjoutForm{
+	background:#f6fcfc;
+	border-bottom:5px solid #d8f2fc;
+}
+
+/*#annonceAjoutForm label {
+	clear:left;
+	float:left;
+	width:100px;
+}*/
+
+#annonceAjoutForm div.articleSeparator {
+	border-bottom:5px solid #d8f2fc;
+	margin-bottom:5px;
+	margin-top:5px;
+	
+}
+
+.annonceAjoutContent{
+	padding-top:10px;
+	width:640px;
+	margin:0 0 0 10px;
+}
+#annonceAjoutForm p{
+	margin:0 0 10px 0;
+}
+#annonceAjoutForm .annonceAjoutTitre {
+	color:#184059;
+	font-family:Georgia,Serif;
+	font-size:105%;
+	font-weight:normal;
+	margin-bottom:10px;
+	padding:2px 0 0;
+}
+
+.annonceAjoutCriteriaLine {
+	margin-bottom:10px;
+	width:100%;
+}
+
+.annonceAjoutCriteria {
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+
+.user_input1, .user_input2, .user_input3, .user_input4, .user_input5, .user_input_select1 {
+	display:inline;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+function pollSubmit(pollNum){var val=$("#dailyPoll"+pollNum+" input[@checked]").val();var rText=$.ajax({type:"POST",url:"/func/poll.php",data:"p="+pollNum+"&opt="+val,async:false}).responseText;$("#poll").html(rText);var responseNum=$(".pollResults").length;for(i=0;i<responseNum;i++){var thisLi=$("#results"+i);var resultval=$("#results"+i+" span").text();$(thisLi).animate({width:parseInt(resultval)},750);}
+return false;}

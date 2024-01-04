@@ -1,0 +1,344 @@
+<!--
+ * FCKeditor - The text editor for internet
+ * Copyright (C) 2003-2004 Frederico Caldeira Knabben
+ * 
+ * Licensed under the terms of the GNU Lesser General Public License:
+ * 		http://www.opensource.org/licenses/lgpl-license.php
+ * 
+ * For further information visit:
+ * 		http://www.fckeditor.net/
+ * 
+ * File Name: frmresourceslist.html
+ * 	This page shows all resources available in a folder in the File Browser.
+ * 
+ * Version:  2.0 RC2
+ * Modified: 2004-11-27 00:29:09
+ * 
+ * File Authors:
+ * 		Frederico Caldeira Knabben (fredck@fckeditor.net)
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<!-- 
+		* Fonctionnalité click droit pour la gestion des dossiers et fichiers
+		* Fonctions : Suppression, renommage
+		* Auteur : RAKOTONANAHARY E. Hervé
+		-->
+		<style>
+		#menuC       {
+		  color:#000000;
+		  background-color:#ffffff;
+		  position:absolute;
+		  left:-395px;
+		  top:-390px;
+		  width:12em;
+		  border: 1px outset black;
+		  line-height:0.9em;
+		  cursor:default;
+			}
+		#menuC a     {
+		  color:#000000;		  
+		  text-decoration:none;
+		  font-size:10px;
+		  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		  font-weight:bold;
+		  padding-left:15px;
+		  padding-right:15px;
+		  cursor:hand;
+			}
+		#menuC a:hover     {
+		  color:#0080ff;
+  		  text-decoration:none;
+		  font-size:10px;
+		  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+		  font-weight:bold;
+		  padding-left:15px;
+		  padding-right:15px;
+		  cursor:hand;
+			}
+
+		</style>
+		<script language="JavaScript">
+		var selection_cour;
+		var timer1;
+		var menuC;
+		var menuCStyle;
+
+		document.oncontextmenu = function(e){ 
+			if(e==null)
+				e=window.event;
+			showmenuC(e);
+			return false;
+		};
+
+		function ct(){
+			clearTimeout(timer1);
+		}
+		function ia(){
+			timer1=setTimeout('hidemenuC();',400);
+		}
+
+		function showmenuC(e){  // Place le sommaire et l'affiche à l'écran
+			var ok=0;
+			target=(e.target!=null)?e.target:e.srcElement;
+			if(target.tagName.toLowerCase() == "a"){
+				ok = 1;
+				selection_cour=target.id;
+			}
+			if(ok){
+				var cX = (navigator.appName.substring(0,3) == "Net") ? e.pageX : e.clientX;
+				var cY = (navigator.appName.substring(0,3) == "Net") ? e.pageY : e.clientY;
+				var rightedge= document.body.clientWidth-cX;
+				var bottomedge= document.body.clientHeight-cY;
+				if (rightedge>menuC.offsetWidth) {menuCStyle.left=document.body.scrollLeft+cX;}
+				else {menuCStyle.left=document.body.scrollLeft+cX-menuC.offsetWidth;}
+				if (document.body.scrollLeft>document.body.scrollLeft+cX-menuC.offsetWidth && rightedge<menuC.offsetWidth)
+				{menuCStyle.left=document.body.scrollLeft;}
+
+				if (bottomedge>menuC.offsetHeight) {menuCStyle.top=document.body.scrollTop+cY;}
+				else {menuCStyle.top=document.body.scrollTop+cY-menuC.offsetHeight;}
+
+				if (document.body.scrollTop>document.body.scrollTop+cY-menuC.offsetHeight && bottomedge<menuC.offsetHeight)
+				{menuCStyle.top=document.body.scrollTop;}
+
+				menuCStyle.visibility="visible";
+			}
+		}
+
+		function hidemenuC(){menuCStyle.visibility="hidden";} // Cache le sommaire.
+
+		if (navigator.appName.substring(0,3) == "Net") document.captureEvents(Event.MOUSEMOVE);
+
+		function Supprimer(){
+			resultat = confirm('Voulez-vous supprimer '+selection_cour+' ?');
+			if(resultat=="1"){	
+				document.traitement.action="operation.php?action=S&rep="+selection_cour+"&trt="+oConnector.treatment+"&zSp="+window.top.sServerPath;
+				document.traitement.submit();
+			}
+		}
+		
+		function Renommer()
+		{
+			var newName;		
+			while ( true ) 
+			{
+				newName = prompt( 'Fichier sélectionné : '+selection_cour+'\nEntrer le nouveau nom :', '' ) ;			
+				if ( newName == null )
+					return ;
+				else if ( newName.length == 0 )
+					alert( 'Entrer un nouveau nom' ) ;
+				else
+					break ;
+			}
+			document.traitement.action="operation.php?action=M&newfic="+newName+"&oldfic="+selection_cour+"&trt="+oConnector.treatment+"&zSp="+window.top.sServerPath;
+			document.traitement.submit();
+		}
+		</script>
+		<!-- 
+		* FIN TRAITEMENT
+		-->
+
+
+
+
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<link href="Browser.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="js/common.js"></script>
+		<script language="javascript">
+
+var oListManager = new Object() ;
+
+oListManager.Init = function()
+{
+	this.Table = document.getElementById('tableFiles') ;
+}
+
+oListManager.Clear = function()
+{
+	// Remove all other rows available.
+	while ( this.Table.rows.length > 0 )
+		this.Table.deleteRow(0) ;
+}
+
+oListManager.AddFolder = function( folderName, folderPath )
+{
+	// Create the new row.
+	var oRow = this.Table.insertRow(-1) ;
+
+	// Build the link to view the folder.
+	var sLink = '<a href="#" onclick="OpenFolder(\'' + folderPath + '\');return false;" id=\'' + folderPath + '\'>' ;
+
+	// Add the folder icon cell.
+	var oCell = oRow.insertCell(-1) ;
+	oCell.width = 16 ;
+	oCell.innerHTML = sLink + '<img alt="" src="images/Folder.gif" width="16" height="16" border="0"></a>' ;
+
+	// Add the folder name cell.
+	oCell = oRow.insertCell(-1) ;
+	oCell.noWrap = true ;
+	oCell.colSpan = 2 ;
+	oCell.innerHTML = '&nbsp;' + sLink + folderName + '</a>' ;
+}
+
+oListManager.AddFile = function( fileName, fileUrl, fileSize )
+{
+	// Create the new row.
+	var oRow = this.Table.insertRow(-1) ;
+
+	// Build the link to view the folder.
+	var sLink = '<a href="#" onclick="OpenFile(\'' + fileUrl + '\');return false;" id=\'' + fileUrl + '\'>' ;
+
+	// Get the file icon.
+	var sIcon = oIcons.GetIcon( fileName ) ;
+
+	// Add the file icon cell.
+	var oCell = oRow.insertCell(-1) ;
+	oCell.width = 16 ;
+	oCell.innerHTML = sLink + '<img alt="" src="images/icons/' + sIcon + '.gif" width="16" height="16" border="0"></a>' ;
+
+	// Add the file name cell.
+	oCell = oRow.insertCell(-1) ;
+	oCell.innerHTML = '&nbsp;' + sLink + fileName + '</a>' ;
+	
+	// Add the file size cell.
+	oCell = oRow.insertCell(-1) ;
+	oCell.noWrap = true ;
+	oCell.align = 'right' ;
+	oCell.innerHTML = '&nbsp;' + fileSize + ' KB' ;
+}
+
+function OpenFolder( folderPath )
+{
+	// Load the resources list for this folder.
+	window.parent.frames['frmFolders'].LoadFolders( folderPath ) ;
+}
+
+
+function PageQuery(q) {
+	if(q.length > 1) this.q = q.substring(1, q.length);
+	else this.q = null;
+	this.keyValuePairs = new Array();
+	if(q) {
+	for(var i=0; i < this.q.split("&").length; i++) {
+	this.keyValuePairs[i] = this.q.split("&")[i];
+	}
+}
+this.getKeyValuePairs = function() { return this.keyValuePairs; }
+this.getValue = function(s) {
+for(var j=0; j < this.keyValuePairs.length; j++) {
+if(this.keyValuePairs[j].split("=")[0] == s)
+return this.keyValuePairs[j].split("=")[1];
+}
+return false;
+}
+this.getParameters = function() {
+var a = new Array(this.getLength());
+for(var j=0; j < this.keyValuePairs.length; j++) {
+a[j] = this.keyValuePairs[j].split("=")[0];
+}
+return a;
+}
+this.getLength = function() { return this.keyValuePairs.length; } 
+}
+function queryString(key){
+	var page = new PageQuery(window.top.location.search); 
+	return unescape(page.getValue(key)); 
+}
+function displayItem(key){
+	if(queryString(key)=='false') 
+	{
+		document.write("you didn't enter a ?name=value querystring item.");
+	}else{
+		return (queryString(key));
+	}
+}
+
+
+function OpenFile( fileUrl )
+{
+	var chaine, not_fck, champs ;
+	chaine = new String(fileUrl);
+	not_fck = displayItem('externe');
+	name_attr = displayItem('champs');
+	if(not_fck=="yes"){
+/* Tahina 25102007 */
+		var champs=window.top.opener.document.getElementsByName(name_attr);
+		champs[0].setAttribute('value',fileUrl);
+		window.top.close() ;
+//		window.top.opener.focus() ;
+		champs[0].focus();
+	}
+	else{	
+//		window.top.opener.SetUrl( fileUrl ) ;
+/*Tahina 11042005*/
+		window.top.opener.SetUrl( fileUrl,oConnector.ResourceType ) ;
+/**/	
+		window.top.close() ;
+		window.top.opener.focus() ;
+	}
+}
+
+function LoadResources( resourceType, folderPath )
+{
+	oListManager.Clear() ;
+	oConnector.ResourceType = resourceType ;
+	oConnector.CurrentFolder = folderPath
+	oConnector.SendCommand( 'GetFoldersAndFiles', null, GetFoldersAndFilesCallBack ) ;
+}
+
+function Refresh()
+{
+	LoadResources( oConnector.ResourceType, oConnector.CurrentFolder ) ;
+}
+
+function GetFoldersAndFilesCallBack( fckXml )
+{
+	// Get the current folder path.
+	var oNode = fckXml.SelectSingleNode( 'Connector/CurrentFolder' ) ;
+	var sCurrentFolderPath	= oNode.attributes.getNamedItem('path').value ;
+	var sCurrentFolderUrl	= oNode.attributes.getNamedItem('url').value ;
+
+	// Add the Folders.	
+	var oNodes = fckXml.SelectNodes( 'Connector/Folders/Folder' ) ;
+	for ( var i = 0 ; i < oNodes.length ; i++ )
+	{
+		var sFolderName = oNodes[i].attributes.getNamedItem('name').value ;
+		oListManager.AddFolder( sFolderName, sCurrentFolderPath + sFolderName + "/" ) ;
+	}
+	
+	// Add the Files.	
+	var oNodes = fckXml.SelectNodes( 'Connector/Files/File' ) ;
+	for ( var i = 0 ; i < oNodes.length ; i++ )
+	{
+		var sFileName = oNodes[i].attributes.getNamedItem('name').value ;
+		var sFileSize = oNodes[i].attributes.getNamedItem('size').value ;
+		oListManager.AddFile( sFileName, sCurrentFolderUrl + sFileName, sFileSize ) ;
+	}
+}
+
+window.onload = function()
+{
+	oListManager.Init() ;
+	window.top.IsLoadedResourcesList = true ;
+}
+
+</script>
+	</head>
+	<body class="FileArea" bottomMargin="10" leftMargin="10" topMargin="10" rightMargin="10">
+	<form name="traitement" action="" method="post"></form>
+		<table id="tableFiles" cellSpacing="1" cellPadding="0" width="100%" border="0">
+		</table>
+
+
+		<div id="menuC" onMouseover="ct();" onMouseout="ia();">
+			<a href="javascript:Supprimer();">Supprimer</a><br />
+			<hr size="1" noshade />
+			<a href="javascript:Renommer();">Renommer</a>
+		</div>
+		<script language="JavaScript1.2">
+		menuC=document.getElementById("menuC");
+		menuCStyle=document.getElementById("menuC").style;
+		</script>	
+	</body>
+</html>

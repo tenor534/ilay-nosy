@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dao xmlns="http://jelix.org/ns/dao/1.0">
+    <datasources>
+        <primarytable name="commentFor" realname="commentFor" primarykey="commentFor_id" />
+    </datasources>
+    <record>
+
+    <property name="commentFor_id" fieldname="commentFor_id" datatype="autoincrement"/>
+    <property name="commentFor_sujetId" fieldname="commentFor_sujetId" datatype="int" required="true"/>
+    <property name="commentFor_utilisateurId" fieldname="commentFor_utilisateurId" datatype="int" required="true"/>
+    <property name="commentFor_texte" fieldname="commentFor_texte" datatype="string" required="true"/>
+    <property name="commentFor_dateCreation" fieldname="commentFor_dateCreation" datatype="datetime" required="true"/>
+    <property name="commentFor_publier" fieldname="commentFor_publier" datatype="int" required="true"/>
+
+    <!--<property name="" fieldname="" datatype="string/int/float/autoincrement/date"
+        required="yes"
+        maxlength="" minlength="" regexp=""
+        sequence=""
+        updatemotif="" insertmotif="" selectmotif=""
+    />-->
+    </record>
+    <!--<factory>
+        <method name="findByStage" type="select/selectfirst/delete/update/php">
+            <parameter name="" />
+            <values>
+                <value property="" value="" />
+            </values>
+            <conditions logic="and/or">
+                <eq property="" value="" />
+            </conditions>
+            <order>
+                <orderitem property="" way="asc/desc" />
+            </order>
+            <limit offset="" count=""/>
+            <body><![CDATA[
+            ]]></body>
+        </method>
+    </factory>-->
+</dao>
